@@ -1,4 +1,8 @@
-# unity-vr-template
+# Unity-VR-Project
+
+This is a demo project for a virtual shopping experience.
+Feel free to experiment with this code and build your own VR application.
+
 Unity project configured for Virtual Reality development with Unity's [XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.1/manual/index.html) (XIT).
 
 **Unity version:** 2021.3.8f1 (LTS)  
