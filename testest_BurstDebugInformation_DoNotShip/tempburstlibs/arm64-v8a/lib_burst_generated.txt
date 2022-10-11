@@ -193,6 +193,7 @@ Library: lib_burst_generated
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.Subsystem.Registration.dll
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.ProBuilder.Stl.dll
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+--root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.XR.OpenXR.Features.RuntimeDebugger.dll
 --root-assembly=C:\school\-A-Team.Now.In.VR\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
