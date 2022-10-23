@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: m_stylized_stone_wall 2
-  m_Shader: {fileID: 4800000, guid: 62124340350c3c242a36a29980b862b1, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: dfc7c274e0e124345bcff16043713ed9, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -61,6 +61,18 @@ Material:
         m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTexFlr2:
+        m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexWall:
+        m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexWall2:
+        m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: 347974a0786b5f64aa3ef07ca497559f, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -73,8 +85,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: 237dbb313cfc6d241bc238d9339381c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SideTexture:
+        m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopTexture:
+        m_Texture: {fileID: 2800000, guid: c655c12a17666e546a77d5f6a6ab4b2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -110,6 +130,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SampleGI: 0
@@ -124,7 +145,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
