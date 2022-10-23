@@ -24,5 +24,9 @@ public class RoomscaleCharacterCorrection : MonoBehaviour
         center.y = _characterController.height / 2 + _characterController.skinWidth;
 
         _characterController.center = center;
+
+        // Force recalculation of physics to detect collisions.
+        _characterController.Move(new Vector3(0.001f, -0.001f, 0.001f));
+        _characterController.Move(new Vector3(-0.001f, 0.001f, -0.001f));
     }
 }

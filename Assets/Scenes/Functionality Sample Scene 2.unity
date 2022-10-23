@@ -531,7 +531,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 5343022203794773669, guid: fe43091103983ae4d8f3afc99c41bb1a, type: 3}
   m_PrefabInstance: {fileID: 477868041}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &581524668
+--- !u!1001 &764585738
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -541,76 +541,14 @@ PrefabInstance:
     - target: {fileID: 8167415181591859782, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: db8f7fcaaee5d3343a8bf330dbdb4909, type: 2}
+      objectReference: {fileID: 2100000, guid: 2014bc3fa47980e429f24165a8865479, type: 2}
     - target: {fileID: 8167415182154107798, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: db8f7fcaaee5d3343a8bf330dbdb4909, type: 2}
+      objectReference: {fileID: 2100000, guid: 2014bc3fa47980e429f24165a8865479, type: 2}
     - target: {fileID: 8167415182167504788, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
       propertyPath: m_Name
-      value: Automatic Doors (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
---- !u!4 &581524669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-  m_PrefabInstance: {fileID: 581524668}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &764585738
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1407492285}
-    m_Modifications:
-    - target: {fileID: 8167415182167504788, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Name
-      value: Automatic Doors (Scene Switch)
+      value: Automatic Doors
       objectReference: {fileID: 0}
     - target: {fileID: 8167415182167504792, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
       propertyPath: _source
@@ -671,76 +609,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
   m_PrefabInstance: {fileID: 764585738}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &910296196
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1407492285}
-    m_Modifications:
-    - target: {fileID: 8167415181591859782, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b23cc31eb06e76d4d8d24120a0d0384b, type: 2}
-    - target: {fileID: 8167415182154107798, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b23cc31eb06e76d4d8d24120a0d0384b, type: 2}
-    - target: {fileID: 8167415182167504788, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Name
-      value: Automatic Doors (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
---- !u!4 &910296197 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-  m_PrefabInstance: {fileID: 910296196}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1020470875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8167415182167504788, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
@@ -772,7 +640,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Functionality Sample Scene 2
+          m_StringArgument: Functionality Sample Scene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1033690753
@@ -1486,9 +1354,6 @@ Transform:
   m_Children:
   - {fileID: 764585739}
   - {fileID: 11666263}
-  - {fileID: 1970598126}
-  - {fileID: 581524669}
-  - {fileID: 910296197}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1831,76 +1696,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1970598125
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1407492285}
-    m_Modifications:
-    - target: {fileID: 8167415181591859782, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1ddcb860f235f4c4f8c260bb7ff694cc, type: 2}
-    - target: {fileID: 8167415182154107798, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 1ddcb860f235f4c4f8c260bb7ff694cc, type: 2}
-    - target: {fileID: 8167415182167504788, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_Name
-      value: Automatic Doors (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
---- !u!4 &1970598126 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8167415182167504795, guid: ccae916a4f1e7394bad5f8bfe037c063, type: 3}
-  m_PrefabInstance: {fileID: 1970598125}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2017896618
 GameObject:
   m_ObjectHideFlags: 0

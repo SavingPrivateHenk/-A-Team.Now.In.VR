@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {x: 0, y: 0, z: -0.75}
   _duration: 3000
-  _transitionCurve: 4
+  _transitionType: 3
 --- !u!1 &8167415182154107793
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {x: 0, y: 0, z: 0.75}
   _duration: 3000
-  _transitionCurve: 4
+  _transitionType: 3
 --- !u!1 &8167415182167504788
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 917503b8f377943468fcced51b114b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetGameObject: {fileID: 0}
+  _source: {fileID: 0}
   _delay: 0
   _event:
     m_PersistentCalls:
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af041bc5ca6259e45953c91d4e34105b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetGameObject: {fileID: 0}
+  _source: {fileID: 0}
   _delay: 0
   _event:
     m_PersistentCalls:
