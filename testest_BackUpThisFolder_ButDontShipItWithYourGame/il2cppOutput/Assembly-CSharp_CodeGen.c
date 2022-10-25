@@ -54,7 +54,11 @@ extern void SimpleSampleCharacterControl_DirectUpdate_m107B99848528F674872DB7A27
 extern void SimpleSampleCharacterControl_JumpingAndLanding_mE19580C04014DF21450A977993BFBF14A02C4201 (void);
 // 0x00000015 System.Void SimpleSampleCharacterControl::.ctor()
 extern void SimpleSampleCharacterControl__ctor_m4761190D7C96376CB6BD11FC408B321CEA199958 (void);
-static Il2CppMethodPointer s_methodPointers[21] = 
+// 0x00000016 System.Void Ouroboros.Rotator::Update()
+extern void Rotator_Update_m991A21803879110BC42D09D83A5997C5F24D28EC (void);
+// 0x00000017 System.Void Ouroboros.Rotator::.ctor()
+extern void Rotator__ctor_mC76E371C70A4C432B06B9C66D4B29162604CD691 (void);
+static Il2CppMethodPointer s_methodPointers[23] = 
 {
 	DemoFree_Start_mBF4E573159D1922BE6935057FBAA2431CA143555,
 	DemoFree_Update_mB7202DC0B8016DB4563824A605990F8E153C1455,
@@ -77,36 +81,40 @@ static Il2CppMethodPointer s_methodPointers[21] =
 	SimpleSampleCharacterControl_DirectUpdate_m107B99848528F674872DB7A277D33514A3863D24,
 	SimpleSampleCharacterControl_JumpingAndLanding_mE19580C04014DF21450A977993BFBF14A02C4201,
 	SimpleSampleCharacterControl__ctor_m4761190D7C96376CB6BD11FC408B321CEA199958,
+	Rotator_Update_m991A21803879110BC42D09D83A5997C5F24D28EC,
+	Rotator__ctor_mC76E371C70A4C432B06B9C66D4B29162604CD691,
 };
-static const int32_t s_InvokerIndices[21] = 
+static const int32_t s_InvokerIndices[23] = 
 {
-	6478,
-	6478,
-	6478,
-	6478,
-	6478,
-	5078,
-	6478,
-	6478,
-	6478,
-	6478,
-	6478,
-	6478,
-	5108,
-	5108,
-	5108,
-	6478,
-	6478,
-	6478,
-	6478,
-	6478,
-	6478,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	5102,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	5132,
+	5132,
+	5132,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
+	6509,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	21,
+	23,
 	s_methodPointers,
 	0,
 	NULL,

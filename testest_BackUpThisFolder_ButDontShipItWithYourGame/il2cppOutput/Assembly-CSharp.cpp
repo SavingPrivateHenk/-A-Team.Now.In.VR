@@ -56,6 +56,8 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // UnityEngine.Rigidbody
 struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
+// Ouroboros.Rotator
+struct Rotator_tAA317A5D77A45B3DC23521785F052ACCEF12F41B;
 // SimpleSampleCharacterControl
 struct SimpleSampleCharacterControl_t9C536AB742D123A58FCA7692A542CB9EC89537A3;
 // System.String
@@ -517,6 +519,13 @@ struct FreeCameraLogic_t933A1F5D3D9A4CE572D2975E722453D484D2E98D  : public MonoB
 	int32_t ___m_currentIndex_9;
 };
 
+// Ouroboros.Rotator
+struct Rotator_tAA317A5D77A45B3DC23521785F052ACCEF12F41B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Vector3 Ouroboros.Rotator::angularSpeed
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___angularSpeed_4;
+};
+
 // SimpleSampleCharacterControl
 struct SimpleSampleCharacterControl_t9C536AB742D123A58FCA7692A542CB9EC89537A3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -928,6 +937,8 @@ inline void List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE (List_1_t58F8
 {
 	((  void (*) (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
+// System.Void UnityEngine.Transform::Rotate(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m2A308205498AFEEA3DF784B1C86E4F7C126CA2EE (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___eulers0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
@@ -2522,6 +2533,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SimpleSampleCharacterControl__ctor_m4761
 		List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE(L_1, List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE_RuntimeMethod_var);
 		__this->___m_collisions_22 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_collisions_22), (void*)L_1);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Ouroboros.Rotator::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator_Update_m991A21803879110BC42D09D83A5997C5F24D28EC (Rotator_tAA317A5D77A45B3DC23521785F052ACCEF12F41B* __this, const RuntimeMethod* method) 
+{
+	{
+		// transform.Rotate(angularSpeed * Time.deltaTime);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___angularSpeed_4;
+		float L_2;
+		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, L_2, NULL);
+		NullCheck(L_0);
+		Transform_Rotate_m2A308205498AFEEA3DF784B1C86E4F7C126CA2EE(L_0, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Ouroboros.Rotator::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rotator__ctor_mC76E371C70A4C432B06B9C66D4B29162604CD691 (Rotator_tAA317A5D77A45B3DC23521785F052ACCEF12F41B* __this, const RuntimeMethod* method) 
+{
+	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
