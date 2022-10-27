@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SideTexture:
-        m_Texture: {fileID: 2800000, guid: 786282c4bc742874e860c72d24bd256e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0455315a1844eb04c887205a7717b846, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -82,7 +82,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopTexture:
-        m_Texture: {fileID: 2800000, guid: 786282c4bc742874e860c72d24bd256e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0455315a1844eb04c887205a7717b846, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
