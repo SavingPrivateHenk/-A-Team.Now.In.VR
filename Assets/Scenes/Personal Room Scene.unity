@@ -2583,9 +2583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetFrameRate: 72
   _xrOrigin: {fileID: 905533416}
-  _cameraCanvas: {fileID: 1930980055}
-  _fadeInDuration: 1000
-  _fadeOutDuration: 1000
+  _basket: {fileID: 0}
+  _fadeEffect: {fileID: 0}
   _onSceneLoad:
     m_PersistentCalls:
       m_Calls: []
@@ -3018,11 +3017,6 @@ PrefabInstance:
 --- !u!224 &1930980054 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5343022203794773658, guid: fe43091103983ae4d8f3afc99c41bb1a, type: 3}
-  m_PrefabInstance: {fileID: 1930980053}
-  m_PrefabAsset: {fileID: 0}
---- !u!223 &1930980055 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 5343022203794773669, guid: fe43091103983ae4d8f3afc99c41bb1a, type: 3}
   m_PrefabInstance: {fileID: 1930980053}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2059949022

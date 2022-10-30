@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -524,11 +524,6 @@ PrefabInstance:
 --- !u!224 &477868042 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5343022203794773658, guid: fe43091103983ae4d8f3afc99c41bb1a, type: 3}
-  m_PrefabInstance: {fileID: 477868041}
-  m_PrefabAsset: {fileID: 0}
---- !u!223 &477868043 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 5343022203794773669, guid: fe43091103983ae4d8f3afc99c41bb1a, type: 3}
   m_PrefabInstance: {fileID: 477868041}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &581524668
@@ -1431,9 +1426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetFrameRate: 72
   _xrOrigin: {fileID: 270940910}
-  _cameraCanvas: {fileID: 477868043}
-  _fadeInDuration: 1000
-  _fadeOutDuration: 1000
+  _basket: {fileID: 0}
+  _fadeEffect: {fileID: 0}
   _onSceneLoad:
     m_PersistentCalls:
       m_Calls: []
