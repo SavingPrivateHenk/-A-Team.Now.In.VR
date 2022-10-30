@@ -6,23 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Functionality Sample Scene.unity
-    guid: cf812b10e99fac743b94a1fb3985fa68
-  - enabled: 1
-    path: Assets/Scenes/Personal Room Scene.unity
-    guid: 38f6453babdca5b42a4f5096ac64418f
-  - enabled: 0
-    path: Assets/Scenes/Store Scene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Functionality Sample Scene 586.unity
-    guid: 2e4f737d58eba1948ab1249203acf343
-  - enabled: 1
     path: Assets/Scenes/Outdoor Scene 1.unity
     guid: 25f551fb30a937b40a921135a50e119d
-  - enabled: 1
-    path: Assets/Scenes/Functionality Sample Scene 2.unity
-    guid: 8d86cf5fb714ec64b89e28dbd90223c2
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3a7fc96f776c7c74abc08a43f89c5926, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 797126bfce9046b42b0f95ad648639c5, type: 2}

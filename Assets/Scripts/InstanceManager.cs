@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class InstanceManager : MonoBehaviour
 {
@@ -14,8 +9,8 @@ public class InstanceManager : MonoBehaviour
     {
         if(Input.GetKeyUp(KeyCode.C))
         {
-            var prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefaps/Interactable/" + reference + ".prefab", typeof(GameObject));
-            GameObject instance = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
+            var prefab = Resources.Load<GameObject>("Assets/Prefaps/Interactable/" + reference + ".prefab");
+            GameObject instance = Instantiate(prefab, Vector3.zero, Quaternion.identity);
             
             instance.transform.position = Vector3.one;
             
