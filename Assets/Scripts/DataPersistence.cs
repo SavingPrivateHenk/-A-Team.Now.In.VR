@@ -7,6 +7,7 @@ public class DataPersistence : MonoBehaviour
 
     [HideInInspector]
     public Dictionary<int, (Vector3 position, Quaternion rotation)> XROriginTransform = new();
+    public Dictionary<string, (float price, int quantity, string prefab, string material)> BasketItems = new();
 
     private void Awake()
     {

@@ -8,5 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Product : MonoBehaviour
 {
     public string ProductName;
-    public decimal Price;
+    public float  ProductPrice;
+    public string PrefabName;
+    public string MaterialName;
 }
