@@ -3,7 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(XROrigin))]
-public class RoomscaleCharacterCorrection : MonoBehaviour
+public class SocketManager : MonoBehaviour
 {
     private CharacterController _characterController;
     private XROrigin _xrOrigin;
