@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.XR.CoreUtils;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -12,42 +12,46 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject _xrOrigin;
-    [SerializeField, Space]
-    private Canvas _cameraCanvas;
 
-    [SerializeField, Tooltip("Fade in duration (ms)."), Space]
-    private float _fadeInDuration = 1000f;
-    [SerializeField, Tooltip("Fade out duration (ms).")]
-    private float _fadeOutDuration = 1000f;
+    [SerializeField]
+    private ShoppingBasketManager _basket;
 
-    [SerializeField, Space]
+    [SerializeField]
+    private FadeEffect _fadeEffect;
+
+    [Space]
+    [SerializeField]
     private UnityEvent _onSceneLoad;
-
-    private FadeCameraEffect _fadeCameraEffect;
 
     private void Awake()
     {
         Application.targetFrameRate = _targetFrameRate;
         SceneManager.sceneLoaded += OnSceneLoaded;
-
-        _fadeCameraEffect = _cameraCanvas.GetComponent<FadeCameraEffect>();
     }
 
     public void LoadScene(string scene)
     {
-        DataPersistence.Instance.XROriginTransform[SceneManager.GetActiveScene().buildIndex] = (_xrOrigin.transform.position, _xrOrigin.transform.rotation);
+        DataPersistence.Instance.XROriginTransform[SceneManager.GetActiveScene().buildIndex] = (
+            _xrOrigin.transform.position, _xrOrigin.transform.rotation);
+        DataPersistence.Instance.BasketItems = _basket.Items;
 
-        var loadScene = new UnityEvent();
-        loadScene.AddListener(() => SceneManager.LoadScene(scene, LoadSceneMode.Single));
-        _fadeCameraEffect.FadeOut(_fadeOutDuration, loadScene);
+        _fadeEffect.FadeOut(LoadSceneEvent(scene));
+    }
+
+    private UnityEvent LoadSceneEvent(string scene)
+    {
+        var loadEvent = new UnityEvent();
+
+        loadEvent.AddListener(
+            () => SceneManager.LoadScene(scene, LoadSceneMode.Single));
+
+        return loadEvent;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        // Transforming the Origin to the position the character originally left the scene at
-        // will cause the Scene Change to Trigger again, causing an endless loop.
-        //TransformXROrigin(scene);
-        _fadeCameraEffect.FadeIn(_fadeInDuration, _onSceneLoad);
+        // TODO: Transform Origin without triggerin Scene Load
+        _fadeEffect.FadeIn(_onSceneLoad);
     }
 
     private void TransformXROrigin(Scene scene)
