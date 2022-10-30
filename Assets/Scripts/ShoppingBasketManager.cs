@@ -22,6 +22,10 @@ public class ShoppingBasketManager : MonoBehaviour
         _inputActionReference.action.performed += ToggleUIState;
         _shoppingBasketUIController = _shoppingBasketUI.GetComponent<ShoppingBasketUIController>();
         
+    }
+
+    private void Start()
+    {
         Items = DataPersistence.Instance.BasketItems;
 
         foreach (var item in Items)
@@ -32,6 +36,7 @@ public class ShoppingBasketManager : MonoBehaviour
         }
         UpdateShoppingBasketTotal();
     }
+
     private void ToggleUIState(InputAction.CallbackContext callbackContext)
     {
         _shoppingBasketUI.SetActive(!_shoppingBasketUI.activeSelf);
