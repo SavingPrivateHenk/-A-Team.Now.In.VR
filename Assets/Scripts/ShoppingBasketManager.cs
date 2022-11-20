@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -27,6 +28,8 @@ public class ShoppingBasketManager : MonoBehaviour
     private void Start()
     {
         Items = DataPersistence.Instance.BasketItems;
+        
+        // AddItem("Chair A", 1, 3, "Chair A", "Solid/Green");
 
         foreach (var item in Items)
         {
@@ -53,7 +56,6 @@ public class ShoppingBasketManager : MonoBehaviour
             AddItem(product.ProductName, product.ProductPrice, quantity, product.PrefabName, product.MaterialName);
         }
     }
-
     public void RemoveFromBasket(Product product) => RemoveItem(product.ProductName);
 
     private void AddItem(string name, float price, int quantity, string prefab, string material)

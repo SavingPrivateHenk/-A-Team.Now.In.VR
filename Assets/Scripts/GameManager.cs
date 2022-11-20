@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -50,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        // TODO: Transform Origin without triggerin Scene Load
+        // TODO: Transform Origin without trigger in Scene Load
         _fadeEffect.FadeIn(_onSceneLoad);
     }
 
