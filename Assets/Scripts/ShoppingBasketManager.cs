@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
@@ -29,7 +30,7 @@ public class ShoppingBasketManager : MonoBehaviour
     {
         Items = DataPersistence.Instance.BasketItems;
         
-        // AddItem("Chair A", 1, 3, "Chair A", "Solid/Green");
+        AddItem("Chair A", 1, 3, "Chair A", "Solid/Green");
 
         foreach (var item in Items)
         {
@@ -45,6 +46,21 @@ public class ShoppingBasketManager : MonoBehaviour
         _shoppingBasketUI.SetActive(!_shoppingBasketUI.activeSelf);
     }
 
+    public Item GetFromBasket()
+    {
+        if (Items.Count == 0)
+        {
+            return null;
+        }
+        (float, int, string, string) item = Items.First().Value;
+        Item product = new Item();
+        product.ProductName = Items.First().Key;
+        product.ProductPrice = item.Item1;
+        product.PrefabName = item.Item3;
+        product.MaterialName = item.Item4;
+        return product;
+    }
+
     public void AddToBasket(Product product, int quantity)
     {
         if (Items.ContainsKey(product.ProductName))
@@ -57,6 +73,24 @@ public class ShoppingBasketManager : MonoBehaviour
         }
     }
     public void RemoveFromBasket(Product product) => RemoveItem(product.ProductName);
+
+    public void RemoveOneFromBasket(Item product)
+    {
+        if (!Items.ContainsKey(product.ProductName))
+        {
+            return;
+        }
+
+        int quantity = Items[product.ProductName].quantity;
+        
+        if(quantity == 1)
+        {
+            RemoveItem(product.ProductName);
+            return;
+        }
+        UpdateItem(product.ProductName, -1);
+    }
+
 
     private void AddItem(string name, float price, int quantity, string prefab, string material)
     {
@@ -78,6 +112,7 @@ public class ShoppingBasketManager : MonoBehaviour
     private void RemoveItem(string name)
     {
         Items.Remove(name);
+        _shoppingBasketUIController.RemoveItem(name);
         UpdateShoppingBasketTotal();
     }
 

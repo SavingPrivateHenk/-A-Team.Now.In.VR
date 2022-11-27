@@ -630,7 +630,6 @@ GameObject:
   - component: {fileID: 8143623625355576507}
   - component: {fileID: 8173474937709651508}
   - component: {fileID: 8719553961311156587}
-  - component: {fileID: 6002261088439017408}
   - component: {fileID: 5560592114038426651}
   m_Layer: 0
   m_Name: TV Cupboard
@@ -794,31 +793,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &6002261088439017408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143623625355576504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_TintOnHover: 1
-  m_TintOnSelection: 0
-  m_TintRenderers:
-  - {fileID: 8143623624337068067}
-  - {fileID: 8143623625532655721}
-  - {fileID: 8143623624900267815}
-  - {fileID: 8143623625732363992}
-  - {fileID: 8143623623987791517}
-  - {fileID: 8143623624288088273}
-  - {fileID: 8143623625326491486}
-  - {fileID: 8143623623882559173}
-  - {fileID: 8143623624949879331}
 --- !u!65 &5560592114038426651
 BoxCollider:
   m_ObjectHideFlags: 0

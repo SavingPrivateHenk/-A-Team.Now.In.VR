@@ -16,14 +16,19 @@ public class InstanceManager : MonoBehaviour
 
     void AddObject(InputAction.CallbackContext callbackContext)
     {
-        (float, int, string, string) item = basket.Items.First().Value;
-
-        var material = Resources.Load<Material>("Materials/" + item.Item4);
-        var prefab = Resources.Load<GameObject>("Prefaps/Interactable/" + item.Item3);
+        Item product = basket.GetFromBasket();
+        if (product == null)
+        {
+            return;
+        }
+        var material = Resources.Load<Material>("Materials/" + product.MaterialName);
+        var prefab = Resources.Load<GameObject>("Prefaps/Interactable/" + product.PrefabName);
         GameObject instance = Instantiate(prefab, Vector3.zero, Quaternion.identity);
         
-        instance.transform.position = Vector3.one;
+        instance.transform.position = new Vector3(Random.Range(0, 10), 1, Random.Range(0, 10));
         
         ColorChanger.FindMaterials(instance.transform, material);
+        
+        basket.RemoveOneFromBasket(product);
     }
 }

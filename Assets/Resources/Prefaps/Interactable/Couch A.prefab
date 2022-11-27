@@ -258,7 +258,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665215912154734462}
-  - component: {fileID: 2645184473670150697}
   - component: {fileID: 6255042053664103419}
   - component: {fileID: 6358164244448272994}
   - component: {fileID: 7991572817301517584}
@@ -293,30 +292,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2645184473670150697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665215912154734463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_TintOnHover: 1
-  m_TintOnSelection: 0
-  m_TintRenderers:
-  - {fileID: 1665215911999900147}
-  - {fileID: 1665215911717270063}
-  - {fileID: 1665215913248420938}
-  - {fileID: 1665215912864277279}
-  - {fileID: 1665215911691768481}
-  - {fileID: 1665215913410690813}
-  - {fileID: 1665215913653933676}
-  - {fileID: 1665215912337380486}
 --- !u!54 &6255042053664103419
 Rigidbody:
   m_ObjectHideFlags: 0

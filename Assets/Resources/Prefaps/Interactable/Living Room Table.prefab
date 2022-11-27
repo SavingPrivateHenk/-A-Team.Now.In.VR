@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 2784053989108444280}
   - component: {fileID: 6303240732679185084}
   - component: {fileID: 7136761186860458750}
-  - component: {fileID: 4924766712542523488}
   - component: {fileID: 9171879469282615037}
   m_Layer: 0
   m_Name: Living Room Table
@@ -593,27 +592,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &4924766712542523488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2784053989108444283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_TintOnHover: 1
-  m_TintOnSelection: 0
-  m_TintRenderers:
-  - {fileID: 2784053988501679515}
-  - {fileID: 2784053988554323409}
-  - {fileID: 2784053988718767058}
-  - {fileID: 2784053988146944439}
-  - {fileID: 2784053988816641804}
 --- !u!65 &9171879469282615037
 BoxCollider:
   m_ObjectHideFlags: 0

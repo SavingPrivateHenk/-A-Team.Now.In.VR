@@ -509,7 +509,6 @@ GameObject:
   - component: {fileID: 7323144153881107798}
   - component: {fileID: 7718198695809845089}
   - component: {fileID: 9072308867240406498}
-  - component: {fileID: 547019065991858855}
   - component: {fileID: 5296694123845288490}
   m_Layer: 0
   m_Name: Couch B
@@ -679,30 +678,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &547019065991858855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7323144153881107799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991c69b8a1b6a444a9177914f77cf7d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TintColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  m_TintOnHover: 1
-  m_TintOnSelection: 0
-  m_TintRenderers:
-  - {fileID: 7323144153148647891}
-  - {fileID: 7323144153890949356}
-  - {fileID: 7323144153047026811}
-  - {fileID: 7323144152824198134}
-  - {fileID: 7323144153520375080}
-  - {fileID: 7323144152148183899}
-  - {fileID: 7323144154017655722}
-  - {fileID: 7323144152137395891}
 --- !u!65 &5296694123845288490
 BoxCollider:
   m_ObjectHideFlags: 0
