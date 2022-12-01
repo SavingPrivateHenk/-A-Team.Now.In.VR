@@ -16,7 +16,7 @@ public class ProductTooltip : MonoBehaviour
     private Camera _mainCamera;
 
     [SerializeField]
-    private ShoppingBasketManager _shoppingBasket;
+    private ShoppingBasketManager _shoppingBasketManager;
 
     private GameObject _selectedGameObject;
     private Collider _selectedObjectcollider;
@@ -24,7 +24,7 @@ public class ProductTooltip : MonoBehaviour
     private void Awake()
     {
         _tooltipPrefab = Instantiate(_tooltipPrefab);
-        _tooltipText   = _tooltipPrefab.GetComponentInChildren<TextMeshProUGUI>();
+        _tooltipText = _tooltipPrefab.GetComponentInChildren<TextMeshProUGUI>();
         _tooltipButton = _tooltipPrefab.GetComponentInChildren<Button>();
         _tooltipButton.onClick.AddListener(OnBasketButtonClick);
     }
@@ -38,7 +38,7 @@ public class ProductTooltip : MonoBehaviour
     {
         var interactableGameObject = InteractableMonoBehaviour(args.interactableObject).gameObject;
         if (interactableGameObject.Equals(_selectedGameObject)) return;
-        if (interactableGameObject.TryGetComponent<Product>(out var product))
+        if (interactableGameObject.TryGetComponent<ProductBehaviour>(out var product))
         {
             _selectedGameObject = interactableGameObject;
             _selectedObjectcollider = _selectedGameObject.GetComponent<Collider>();
@@ -51,7 +51,8 @@ public class ProductTooltip : MonoBehaviour
 
     private void OnBasketButtonClick()
     {
-        _shoppingBasket.AddToBasket(_selectedGameObject.GetComponent<Product>(), 1);
+        var productBehaviour = _selectedGameObject.GetComponent<ProductBehaviour>();
+        _shoppingBasketManager.UpsertProduct(new Product(productBehaviour.ProductName, productBehaviour.ProductPrice, productBehaviour.PrefabName, productBehaviour.MaterialName), 1);
         _tooltipPrefab.SetActive(false);
         _selectedGameObject = null;
     }

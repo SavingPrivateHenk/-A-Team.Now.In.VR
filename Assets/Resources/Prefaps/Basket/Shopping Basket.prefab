@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 2928943179120000242}
   - component: {fileID: 2928943179120000241}
   m_Layer: 5
-  m_Name: Totaal
+  m_Name: Basket Total
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -769,9 +769,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2928943179315061018}
-  - component: {fileID: 2928943179315061019}
   m_Layer: 0
-  m_Name: Shopping Basket UI
+  m_Name: Shopping Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,21 +792,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2928943179315061019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2928943179315061017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973696770bb8834409c55d8028a1c5f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shoppingBasketUIContent: {fileID: 2928943180388680445}
-  _shoppingBasketUIItemPrefab: {fileID: 2056827056716777921, guid: d0d3af220ff381341a0ae710a29e1732, type: 3}
-  _shoppingBasketUITotal: {fileID: 2928943179120000242}
 --- !u!1 &2928943179345739073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1338,7 @@ GameObject:
   - component: {fileID: 2928943180388680446}
   - component: {fileID: 2928943180388680447}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Basket Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

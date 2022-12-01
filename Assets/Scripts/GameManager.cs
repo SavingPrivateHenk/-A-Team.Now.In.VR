@@ -28,9 +28,9 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string scene)
     {
-        DataPersistence.Instance.XROriginTransform[SceneManager.GetActiveScene().buildIndex] = (
+        Persistence.Instance.XROriginTransform[SceneManager.GetActiveScene().buildIndex] = (
             _xrOrigin.transform.position, _xrOrigin.transform.rotation);
-        DataPersistence.Instance.BasketItems = _basket.Items;
+        //DataPersistence.Instance.BasketItems = _basket.Products;
 
         _fadeEffect.FadeOut(LoadSceneEvent(scene));
     }
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     private void TransformXROrigin(Scene scene)
     {
         int buildIndex = scene.buildIndex;
-        var xrOriginTransform = DataPersistence.Instance.XROriginTransform;
+        var xrOriginTransform = Persistence.Instance.XROriginTransform;
 
         if (xrOriginTransform.ContainsKey(buildIndex))
         {

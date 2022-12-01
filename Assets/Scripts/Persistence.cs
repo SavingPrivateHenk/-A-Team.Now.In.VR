@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataPersistence : MonoBehaviour
+public class Persistence : MonoBehaviour
 {
-    public static DataPersistence Instance;
+    public static Persistence Instance;
 
     [HideInInspector]
     public Dictionary<int, (Vector3 position, Quaternion rotation)> XROriginTransform = new();
-    public Dictionary<string, (float price, int quantity, string prefab, string material)> BasketItems = new();
+    public Dictionary<Product, int> Products = new();
 
     private void Awake()
     {
