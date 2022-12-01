@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 2784053989108444280}
   - component: {fileID: 6026770043887013651}
   - component: {fileID: 7548871001931777725}
-  - component: {fileID: 2577224276067756229}
+  - component: {fileID: 8987553495333011022}
   m_Layer: 0
   m_Name: Living Room Table
   m_TagString: Untagged
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2577224276067756229
+--- !u!114 &8987553495333011022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -555,10 +555,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2784053989108444283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8f81ed6f0f2aa409ecca38718d8db7, type: 3}
+  m_Script: {fileID: 11500000, guid: d680a3f4536d0bf4f8286b8005d67813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProductName: Living Room Tabel
-  ProductPrice: 0
-  PrefabName: Living Room Tabel
-  MaterialName: Green
+  ProductName: Living Room Table
+  ProductPrice: 132.89
+  PrefabName: Living Room Table
+  MaterialName: Grey
