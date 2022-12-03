@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 2928943180698643957}
   - component: {fileID: 2928943180698643956}
   m_Layer: 5
-  m_Name: Betalen
+  m_Name: Betalen Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

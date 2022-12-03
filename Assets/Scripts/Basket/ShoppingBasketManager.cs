@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -5,6 +6,7 @@ using TMPro;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShoppingBasketManager : MonoBehaviour
@@ -19,7 +21,11 @@ public class ShoppingBasketManager : MonoBehaviour
 
     private GameObject m_shoppingBasket;
     private GameObject m_productElementContainer;
+    private GameObject m_shoppingBasketBetalen;
+    
     private TextMeshProUGUI m_shoppingBasketTotal;
+
+    private bool m_isPersonalRoomScene;
 
     private void Awake()
     {
@@ -27,6 +33,9 @@ public class ShoppingBasketManager : MonoBehaviour
         m_shoppingBasket = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Shopping Basket"), ShoppingBasketAnchor.transform);
         m_productElementContainer = m_shoppingBasket.GetNamedChild("Basket Container");
         m_shoppingBasketTotal = m_shoppingBasket.GetNamedChild("Basket Total").GetComponent<TextMeshProUGUI>();
+        m_shoppingBasketBetalen = m_shoppingBasket.GetNamedChild("Betalen Button");
+        m_isPersonalRoomScene = SceneManager.GetActiveScene().name.Equals("Personal Room Scene", StringComparison.OrdinalIgnoreCase);
+        m_shoppingBasketBetalen.SetActive(!m_isPersonalRoomScene);
     }
 
     private void Start()
