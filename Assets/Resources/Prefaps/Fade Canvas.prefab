@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 5343022203794773668}
   - component: {fileID: 5343022203794773659}
   m_Layer: 0
-  m_Name: Camera Canvas
+  m_Name: Fade Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,7 +187,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5343022203794773657}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -203,5 +203,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96eccc2ff85730b4bb034d0e69938bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 1000
-  _transitionType: 4

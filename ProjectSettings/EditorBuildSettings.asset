@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Personal Room Scene.unity
     guid: 38f6453babdca5b42a4f5096ac64418f
-  - enabled: 1
-    path: Assets/Scenes/Functionality Sample Scene.unity
-    guid: cf812b10e99fac743b94a1fb3985fa68
-  - enabled: 1
-    path: Assets/Scenes/Functionality Sample Scene 2.unity
-    guid: a4b4d99f513e98741999b7108607f729
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3a7fc96f776c7c74abc08a43f89c5926, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 797126bfce9046b42b0f95ad648639c5, type: 2}

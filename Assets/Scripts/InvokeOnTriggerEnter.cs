@@ -6,24 +6,24 @@ using UnityEngine.Events;
 public class InvokeOnTriggerEnter : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _source;
+    private GameObject m_source;
     [SerializeField, Tooltip("Delay (ms).")]
-    private float _delay;
+    private float m_delay;
     [SerializeField]
-    private UnityEvent _event;
+    private UnityEvent m_event;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_source == null || other.gameObject == _source)
+        if (m_source == null || other.gameObject == m_source)
         {
-            if (_delay > 0)
+            if (m_delay > 0)
             {
                 StopAllCoroutines();
-                StartCoroutine(_event.Invoke(_delay));
+                StartCoroutine(m_event.Invoke(m_delay));
             }
             else
             {
-                _event.Invoke();
+                m_event.Invoke();
             }
         }
     }

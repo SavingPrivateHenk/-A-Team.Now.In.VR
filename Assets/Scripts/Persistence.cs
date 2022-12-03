@@ -6,7 +6,7 @@ public class Persistence : MonoBehaviour
     public static Persistence Instance;
 
     [HideInInspector]
-    public Dictionary<int, (Vector3 position, Quaternion rotation)> XROriginTransform = new();
+    public Dictionary<int, (Vector3 position, Quaternion rotation)> LocationInScenes = new();
     public Dictionary<Product, int> Products = new();
 
     private void Awake()

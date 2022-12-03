@@ -12,26 +12,21 @@ public class ShoppingBasketManager : MonoBehaviour
     [HideInInspector]
     public Dictionary<Product, int> Products { get; private set; } = new();
     [HideInInspector]
-    public float TotalPrice;
+    public float TotalPrice { get; set; }
 
     public InputActionReference ToggleUIAction;
     public GameObject ShoppingBasketAnchor;
 
-    [SerializeField]
-    private GameObject _shoppingBasketPrefab;
-    private GameObject _shoppingBasket;
-    private TextMeshProUGUI _shoppingBasketTotal;
-
-    [SerializeField]
-    private GameObject _productElementPrefab;
-    private GameObject _productElementContainer;
+    private GameObject m_shoppingBasket;
+    private GameObject m_productElementContainer;
+    private TextMeshProUGUI m_shoppingBasketTotal;
 
     private void Awake()
     {
         ToggleUIAction.action.performed += ToggleUI;
-        _shoppingBasket = Instantiate(_shoppingBasketPrefab, ShoppingBasketAnchor.transform);
-        _productElementContainer = _shoppingBasket.GetNamedChild("Basket Container");
-        _shoppingBasketTotal = _shoppingBasket.GetNamedChild("Basket Total").GetComponent<TextMeshProUGUI>();
+        m_shoppingBasket = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Shopping Basket"), ShoppingBasketAnchor.transform);
+        m_productElementContainer = m_shoppingBasket.GetNamedChild("Basket Container");
+        m_shoppingBasketTotal = m_shoppingBasket.GetNamedChild("Basket Total").GetComponent<TextMeshProUGUI>();
     }
 
     private void Start()
@@ -66,7 +61,7 @@ public class ShoppingBasketManager : MonoBehaviour
 
     private bool InsertProduct(Product product, int quantity)
     {
-        var instance = Instantiate(_productElementPrefab, _productElementContainer.transform);
+        var instance = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Product Element"), m_productElementContainer.transform);
         if (!instance.TryGetComponent<ProductElement>(out var element)) return false;
         Products.Add(product, quantity);
         element.UpdateProperties(product.Name, product.Price, quantity);
@@ -85,11 +80,11 @@ public class ShoppingBasketManager : MonoBehaviour
         return true;
     }
 
-    private void UpdateTotalField(float change) => _shoppingBasketTotal.text = "Totaal: " + (TotalPrice += change).ToString("C", new CultureInfo("nl-NL"));
+    private void UpdateTotalField(float change) => m_shoppingBasketTotal.text = "Totaal: " + (TotalPrice += change).ToString("C", new CultureInfo("nl-NL"));
 
-    private void ToggleUI(InputAction.CallbackContext context) => _shoppingBasket.SetActive(!_shoppingBasket.activeSelf);
+    private void ToggleUI(InputAction.CallbackContext context) => m_shoppingBasket.SetActive(!m_shoppingBasket.activeSelf);
 
-    private bool TryFindElement(string name, out ProductElement element) => _productElementContainer.TryFindComponentInChildren(true, element => element.Name.Equals(name), out element);
+    private bool TryFindElement(string name, out ProductElement element) => m_productElementContainer.TryFindComponentInChildren(true, element => element.Name.Equals(name), out element);
 
     private void OnDestroy()
     {

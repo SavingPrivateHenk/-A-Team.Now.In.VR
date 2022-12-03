@@ -5,11 +5,11 @@ using UnityEngine;
 public class ProductElement : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI _nameField;
+    private TextMeshProUGUI m_nameField;
     [SerializeField]
-    private TextMeshProUGUI _totalField;
+    private TextMeshProUGUI m_totalField;
     [SerializeField]
-    private TextMeshProUGUI _quantityField;
+    private TextMeshProUGUI m_quantityField;
 
     [HideInInspector]
     public string Name { get; private set; }
@@ -31,8 +31,8 @@ public class ProductElement : MonoBehaviour
 
     private void UpdateFields()
     {
-        _nameField.text = Name;
-        _totalField.text = Total.ToString("C", new CultureInfo("nl-NL"));
-        _quantityField.text = Quantity.ToString();
+        m_nameField.text = Name;
+        m_totalField.text = Total.ToString("C", new CultureInfo("nl-NL"));
+        m_quantityField.text = Quantity.ToString();
     }
 }

@@ -235,9 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d3fbd33feae9145a5d1c9fa1369621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nameField: {fileID: 6119017866795488334}
-  _totalField: {fileID: 8650838633615752393}
-  _quantityField: {fileID: 8330308565823776069}
+  m_nameField: {fileID: 6119017866795488334}
+  m_totalField: {fileID: 8650838633615752393}
+  m_quantityField: {fileID: 8330308565823776069}
 --- !u!1 &3558777275514096661
 GameObject:
   m_ObjectHideFlags: 0

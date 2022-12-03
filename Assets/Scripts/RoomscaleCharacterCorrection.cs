@@ -5,26 +5,26 @@ using UnityEngine;
 [RequireComponent(typeof(XROrigin))]
 public class RoomscaleCharacterCorrection : MonoBehaviour
 {
-    private CharacterController _characterController;
-    private XROrigin _xrOrigin;
+    private CharacterController m_characterController;
+    private XROrigin m_xrOrigin;
 
     void Start()
     {
-        _characterController = GetComponent<CharacterController>();
-        _xrOrigin = GetComponent<XROrigin>();
+        m_characterController = GetComponent<CharacterController>();
+        m_xrOrigin = GetComponent<XROrigin>();
     }
 
     private void FixedUpdate()
     {
-        _characterController.height = _xrOrigin.CameraInOriginSpaceHeight + 0.15f;
+        m_characterController.height = m_xrOrigin.CameraInOriginSpaceHeight + 0.15f;
 
-        var center = transform.InverseTransformPoint(_xrOrigin.Camera.transform.position);
-        center.y = _characterController.height / 2 + _characterController.skinWidth;
+        var center = transform.InverseTransformPoint(m_xrOrigin.Camera.transform.position);
+        center.y = m_characterController.height / 2 + m_characterController.skinWidth;
 
-        _characterController.center = center;
+        m_characterController.center = center;
 
         // Force recalculation of physics to detect collisions.
-        _characterController.Move(new Vector3(0.001f, -0.001f, 0.001f));
-        _characterController.Move(new Vector3(-0.001f, 0.001f, -0.001f));
+        m_characterController.Move(new Vector3(0.001f, -0.001f, 0.001f));
+        m_characterController.Move(new Vector3(-0.001f, 0.001f, -0.001f));
     }
 }

@@ -5,28 +5,28 @@ using UnityEngine;
 
 public class TransformPositionAnimation : MonoBehaviour
 {
-    private Vector3 _origin;
+    private Vector3 m_origin;
     [SerializeField]
-    private Vector3 _target;
+    private Vector3 m_target;
 
     [SerializeField, Tooltip("Duration (ms).")]
-    private float _duration;
+    private float m_duration;
 
     [SerializeField]
-    private TransitionType _transitionType;
-    private TransitionCurve _transitionCurve;
+    private TransitionType m_transitionType;
+    private TransitionCurve m_transitionCurve;
 
     private void Awake()
     {
-        _origin = transform.localPosition;
-        _transitionCurve = new TransitionCurve(_transitionType);
+        m_origin = transform.localPosition;
+        m_transitionCurve = new TransitionCurve(m_transitionType);
     }
 
     [ContextMenu(nameof(MoveToTarget))]
-    public void MoveToTarget() => TransformPosition(_target, _duration);
+    public void MoveToTarget() => TransformPosition(m_target, m_duration);
 
     [ContextMenu(nameof(MoveToOrigin))]
-    public void MoveToOrigin() => TransformPosition(_origin, _duration);
+    public void MoveToOrigin() => TransformPosition(m_origin, m_duration);
 
     private void TransformPosition(Vector3 target, float duration)
     {
@@ -41,7 +41,7 @@ public class TransformPositionAnimation : MonoBehaviour
         while (elapsedTime < duration)
         {
             elapsedTime = elapsedTime + Time.deltaTime;
-            transform.localPosition = Vector3.Lerp(current, target, _transitionCurve.Interpolate(elapsedTime / duration));
+            transform.localPosition = Vector3.Lerp(current, target, m_transitionCurve.Interpolate(elapsedTime / duration));
             yield return null;
         }
     }

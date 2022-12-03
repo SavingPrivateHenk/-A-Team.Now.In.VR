@@ -7,54 +7,48 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ProductTooltip : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _tooltipPrefab;
-    private TextMeshProUGUI _tooltipText;
-    private Button _tooltipButton;
-
-    [SerializeField]
-    private Camera _mainCamera;
-
-    [SerializeField]
-    private ShoppingBasketManager _shoppingBasketManager;
-
-    private GameObject _selectedGameObject;
-    private Collider _selectedObjectcollider;
+    private GameObject m_tooltip;
+    private TextMeshProUGUI m_tooltipText;
+    private Button m_tooltipButton;
+    private ShoppingBasketManager m_shoppingBasketManager;
+    private GameObject m_selectedGameObject;
+    private Collider m_selectedObjectcollider;
 
     private void Awake()
     {
-        _tooltipPrefab = Instantiate(_tooltipPrefab);
-        _tooltipText = _tooltipPrefab.GetComponentInChildren<TextMeshProUGUI>();
-        _tooltipButton = _tooltipPrefab.GetComponentInChildren<Button>();
-        _tooltipButton.onClick.AddListener(OnBasketButtonClick);
+        m_tooltip = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Product Tooltip"));
+        m_tooltipText = m_tooltip.GetComponentInChildren<TextMeshProUGUI>();
+        m_tooltipButton = m_tooltip.GetComponentInChildren<Button>();
+        m_tooltipButton.onClick.AddListener(OnBasketButtonClick);
+        m_shoppingBasketManager = GetComponent<ShoppingBasketManager>();
     }
 
     private void Update()
     {
-        _tooltipPrefab.transform.LookAt(2 * _tooltipPrefab.transform.position - _mainCamera.transform.position);
+        m_tooltip.transform.LookAt(2 * m_tooltip.transform.position - Camera.main.transform.position);
     }
 
     public void OnProductSelected(SelectEnterEventArgs args)
     {
         var interactableGameObject = InteractableMonoBehaviour(args.interactableObject).gameObject;
-        if (interactableGameObject.Equals(_selectedGameObject)) return;
+        if (interactableGameObject.Equals(m_selectedGameObject)) return;
         if (interactableGameObject.TryGetComponent<ProductBehaviour>(out var product))
         {
-            _selectedGameObject = interactableGameObject;
-            _selectedObjectcollider = _selectedGameObject.GetComponent<Collider>();
-            _tooltipText.text = product.ProductName;
-            _tooltipPrefab.transform.SetParent(interactableGameObject.transform, false);
-            _tooltipPrefab.transform.position = _selectedObjectcollider.bounds.center + new Vector3(0f, _selectedObjectcollider.bounds.extents.y + 0.2f, 0f);
-            _tooltipPrefab.SetActive(true);
+            m_selectedGameObject = interactableGameObject;
+            m_selectedObjectcollider = m_selectedGameObject.GetComponent<Collider>();
+            m_tooltipText.text = product.ProductName;
+            m_tooltip.transform.SetParent(interactableGameObject.transform, false);
+            m_tooltip.transform.position = m_selectedObjectcollider.bounds.center + new Vector3(0f, m_selectedObjectcollider.bounds.extents.y + 0.2f, 0f);
+            m_tooltip.SetActive(true);
         }
     }
 
     private void OnBasketButtonClick()
     {
-        var productBehaviour = _selectedGameObject.GetComponent<ProductBehaviour>();
-        _shoppingBasketManager.UpsertProduct(new Product(productBehaviour.ProductName, productBehaviour.ProductPrice, productBehaviour.PrefabName, productBehaviour.MaterialName), 1);
-        _tooltipPrefab.SetActive(false);
-        _selectedGameObject = null;
+        var productBehaviour = m_selectedGameObject.GetComponent<ProductBehaviour>();
+        m_shoppingBasketManager.UpsertProduct(new Product(productBehaviour.ProductName, productBehaviour.ProductPrice, productBehaviour.PrefabName, productBehaviour.MaterialName), 1);
+        m_tooltip.SetActive(false);
+        m_selectedGameObject = null;
     }
 
     private MonoBehaviour InteractableMonoBehaviour(IXRInteractable xrInteractable) => xrInteractable as MonoBehaviour;

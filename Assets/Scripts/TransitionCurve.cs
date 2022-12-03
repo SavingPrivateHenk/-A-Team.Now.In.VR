@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class TransitionCurve
 {
-    private Func<float, float> _interpolationFunction;
+    private Func<float, float> m_interpolationFunction;
 
     public TransitionCurve(TransitionType transitionType)
     {
-        _interpolationFunction = transitionType switch
+        m_interpolationFunction = transitionType switch
         {
             TransitionType.Linear => Linear,
             TransitionType.EaseIn => EaseIn,
@@ -22,7 +22,7 @@ public class TransitionCurve
 
     public float Interpolate(float value)
     {
-        return _interpolationFunction(value);
+        return m_interpolationFunction(value);
     }
 
     // Interpolation functions: linear, sin, cos, https://en.wikipedia.org/wiki/Smoothstep

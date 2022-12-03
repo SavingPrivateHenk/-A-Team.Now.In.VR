@@ -8,19 +8,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7924058928769176431}
+  - component: {fileID: 8755684653694602449}
   - component: {fileID: 7924058928769176419}
   - component: {fileID: 6532732427800506152}
   - component: {fileID: 9197627519237075241}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7924058928769176431
-RectTransform:
+--- !u!4 &8755684653694602449
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -34,11 +34,6 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7924058928769176419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,11 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfda4e942e32b6e47a1abf1cc3479a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetFrameRate: 72
-  _xrOrigin: {fileID: 0}
-  _basket: {fileID: 0}
-  _fadeEffect: {fileID: 0}
-  _onSceneLoad:
+  m_targetFrameRate: 60
+  m_onSceneLoad:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &6532732427800506152
@@ -73,8 +65,8 @@ MonoBehaviour:
   TotalPrice: 0
   ToggleUIAction: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   ShoppingBasketAnchor: {fileID: 0}
-  _shoppingBasketPrefab: {fileID: 2928943179315061017, guid: 234d791a4ed71244ca0abbb80667ea37, type: 3}
-  _productElementPrefab: {fileID: 2056827056716777921, guid: d8e5af1ad4ac392408c5730c35d46152, type: 3}
+  m_shoppingBasketPrefab: {fileID: 0}
+  m_productElementPrefab: {fileID: 0}
 --- !u!114 &9197627519237075241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca16d037324ff44ab6ae8282b160d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tooltipPrefab: {fileID: 7274803465055507271, guid: 13309ce847f7e1542b87265c471f02e2, type: 3}
-  _mainCamera: {fileID: 0}
-  _shoppingBasketManager: {fileID: 6532732427800506152}
+  m_tooltipPrefab: {fileID: 0}
+  m_mainCamera: {fileID: 0}
+  m_shoppingBasketManager: {fileID: 0}
