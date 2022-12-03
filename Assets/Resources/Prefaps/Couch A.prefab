@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 802656437235056990}
   - component: {fileID: -5263113910675545047}
   - component: {fileID: 3836449500997942216}
+  - component: {fileID: 3424005942851555060}
   m_Layer: 0
   m_Name: Couch A
   m_TagString: Untagged
@@ -398,7 +399,20 @@ MonoBehaviour:
   ProductName: Couch A
   ProductPrice: 89.25
   PrefabName: Couch A
-  MaterialName: Brown
+  MaterialName: Solid/Brown
+--- !u!114 &3424005942851555060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665215912154734463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8033d310f562354d81039a7a3005b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: ad24cd2814d73574d9247d106958d0b9, type: 2}
 --- !u!1 &1665215912337380601
 GameObject:
   m_ObjectHideFlags: 0

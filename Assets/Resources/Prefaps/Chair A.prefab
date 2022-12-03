@@ -495,7 +495,7 @@ MonoBehaviour:
   ProductName: Chair A
   ProductPrice: 20.55
   PrefabName: Chair A
-  MaterialName: Green
+  MaterialName: Solid/Green
 --- !u!1 &1428052799161660834
 GameObject:
   m_ObjectHideFlags: 0

@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 5517590665840593049}
   - component: {fileID: 3563929886114345886}
   - component: {fileID: 6297925075431670862}
+  - component: {fileID: 5494149173519805243}
   m_Layer: 0
   m_Name: Chair B
   m_TagString: Untagged
@@ -813,4 +814,17 @@ MonoBehaviour:
   ProductName: Chair B
   ProductPrice: 25.75
   PrefabName: Chair B
-  MaterialName: Orange
+  MaterialName: Solid/Blue
+--- !u!114 &5494149173519805243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438478897502224573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8033d310f562354d81039a7a3005b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: b23cc31eb06e76d4d8d24120a0d0384b, type: 2}

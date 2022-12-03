@@ -1,10 +1,7 @@
-using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
-using UnityEngine.XR.OpenXR.Input;
 
 public class GameManager : MonoBehaviour
 {

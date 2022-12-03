@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 6026770043887013651}
   - component: {fileID: 7548871001931777725}
   - component: {fileID: 8987553495333011022}
+  - component: {fileID: 7710818588196946894}
   m_Layer: 0
   m_Name: Living Room Table
   m_TagString: Untagged
@@ -561,4 +562,17 @@ MonoBehaviour:
   ProductName: Living Room Table
   ProductPrice: 132.89
   PrefabName: Living Room Table
-  MaterialName: Grey
+  MaterialName: Solid/Grey
+--- !u!114 &7710818588196946894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2784053989108444283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8033d310f562354d81039a7a3005b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 53f734ca9f060ad4a805123334d3125c, type: 2}
