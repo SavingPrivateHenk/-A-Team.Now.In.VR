@@ -630,7 +630,8 @@ GameObject:
   - component: {fileID: 8143623625355576507}
   - component: {fileID: 3144487007821674422}
   - component: {fileID: 7572029596058443333}
-  - component: {fileID: 7631169955571417474}
+  - component: {fileID: 6281889108660392941}
+  - component: {fileID: 700114176595457108}
   m_Layer: 0
   m_Name: TV Cupboard
   m_TagString: Untagged
@@ -747,7 +748,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7631169955571417474
+--- !u!114 &6281889108660392941
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -756,13 +757,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 8143623625355576504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8f81ed6f0f2aa409ecca38718d8db7, type: 3}
+  m_Script: {fileID: 11500000, guid: d680a3f4536d0bf4f8286b8005d67813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ProductName: TV Cupboard
-  ProductPrice: 100
+  ProductPrice: 240.5
   PrefabName: TV Cupboard
-  MaterialName: Green
+  MaterialName: Solid/Black
+--- !u!114 &700114176595457108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143623625355576504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8033d310f562354d81039a7a3005b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 9ad92eed6f9f3c34881d59dbdb7c5b1d, type: 2}
 --- !u!1 &8143623625373252114
 GameObject:
   m_ObjectHideFlags: 0

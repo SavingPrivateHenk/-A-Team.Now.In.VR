@@ -5,13 +5,13 @@ using UnityEngine;
 public class UICameraTransformInterpolation : MonoBehaviour
 {
     [SerializeField]
-    private Camera _camera;
+    private Camera m_camera;
     [SerializeField]
-    private float _interpolation = 0.5f;
+    private float m_interpolation = 0.5f;
 
     void Update()
     {
-        gameObject.transform.position = Vector3.LerpUnclamped(gameObject.transform.position, _camera.transform.position, _interpolation);
-        gameObject.transform.rotation = Quaternion.LerpUnclamped(gameObject.transform.rotation, _camera.transform.rotation, _interpolation);
+        gameObject.transform.position = Vector3.LerpUnclamped(gameObject.transform.position, m_camera.transform.position, m_interpolation);
+        gameObject.transform.rotation = Quaternion.LerpUnclamped(gameObject.transform.rotation, m_camera.transform.rotation, m_interpolation);
     }
 }

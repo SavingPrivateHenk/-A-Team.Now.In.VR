@@ -343,8 +343,8 @@ GameObject:
   - component: {fileID: 1428052798561212074}
   - component: {fileID: 4503284826952943176}
   - component: {fileID: 7186099781136667134}
-  - component: {fileID: 2652285256674695720}
   - component: {fileID: 7067976887833844819}
+  - component: {fileID: 6228768473328227351}
   m_Layer: 0
   m_Name: Chair A
   m_TagString: Untagged
@@ -467,22 +467,6 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2652285256674695720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428052798561212073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8f81ed6f0f2aa409ecca38718d8db7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProductName: Chair A
-  ProductPrice: 100
-  PrefabName: Chair A
-  MaterialName: Green
 --- !u!114 &7067976887833844819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +480,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 2feeb922e4d9bcb43a16b05f87785a25, type: 2}
+--- !u!114 &6228768473328227351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428052798561212073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d680a3f4536d0bf4f8286b8005d67813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProductName: Chair A
+  ProductPrice: 20.55
+  PrefabName: Chair A
+  MaterialName: Solid/Green
 --- !u!1 &1428052799161660834
 GameObject:
   m_ObjectHideFlags: 0
