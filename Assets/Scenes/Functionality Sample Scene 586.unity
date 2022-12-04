@@ -1320,11 +1320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfda4e942e32b6e47a1abf1cc3479a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetFrameRate: 72
-  _xrOrigin: {fileID: 0}
-  _basket: {fileID: 0}
-  _fadeEffect: {fileID: 0}
-  _onSceneLoad:
+  m_targetFrameRate: 60
+  m_onSceneLoad:
     m_PersistentCalls:
       m_Calls: []
 --- !u!224 &1313944490
