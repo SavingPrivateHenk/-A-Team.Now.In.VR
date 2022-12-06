@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83c437b8199a1245b9841b2b5757af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActionReference: {fileID: -160020527567978557, guid: da2b439d1a2de5c46a4f428f8cf4fe19, type: 3}
+  inputActionReference: {fileID: 7165847494955897718, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   basket: {fileID: 8219276}
   xrOrigin: {fileID: 905533417}
 --- !u!4 &1173508292
