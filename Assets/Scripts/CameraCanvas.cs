@@ -11,6 +11,7 @@ public class CameraCanvas : MonoBehaviour
 
     private void Awake()
     {
+        GetComponent<Canvas>().worldCamera = Camera.main;
         m_canvasGroup = GetComponent<CanvasGroup>();
         m_transitionCurve = new TransitionCurve(TransitionType.Smoother);
     }
