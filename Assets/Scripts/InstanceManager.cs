@@ -3,6 +3,7 @@ using System.Linq;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class InstanceManager : MonoBehaviour
 { 
@@ -11,6 +12,9 @@ public class InstanceManager : MonoBehaviour
     [SerializeField]
     private ShoppingBasketManager basket;
 
+    [SerializeField]
+    private XROrigin xrOrigin;
+
     [HideInInspector]
     public Dictionary<Product, int> Products { get; private set; } = new();
 
@@ -18,6 +22,10 @@ public class InstanceManager : MonoBehaviour
     private void Awake()
     {
         inputActionReference.action.performed += AddObject;
+        xrOrigin.GetComponent<TeleportationProvider>().enabled = Persistence.Instance.hasTeleportation;
+        xrOrigin.GetComponent<ActionBasedContinuousMoveProvider>().enabled = !Persistence.Instance.hasTeleportation;
+        xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = Persistence.Instance.hasSnapTurn;
+        xrOrigin.GetComponent<ActionBasedContinuousTurnProvider>().enabled = !Persistence.Instance.hasSnapTurn;
     }
 
     void AddObject(InputAction.CallbackContext callbackContext)

@@ -143,6 +143,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2928943179315061017, guid: 234d791a4ed71244ca0abbb80667ea37, type: 3}
     - target: {fileID: 7924058928769176419, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 905533417}
+    - target: {fileID: 7924058928769176419, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
       propertyPath: _xrOrigin
       value: 
       objectReference: {fileID: 905533416}
@@ -1997,7 +2001,9 @@ GameObject:
   - component: {fileID: 905533417}
   - component: {fileID: 905533420}
   - component: {fileID: 905533422}
+  - component: {fileID: 905533426}
   - component: {fileID: 905533424}
+  - component: {fileID: 905533427}
   - component: {fileID: 905533423}
   - component: {fileID: 905533425}
   m_Layer: 0
@@ -2098,14 +2104,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 0}
+  m_System: {fileID: 905533420}
   m_TurnAmount: 45
   m_DebounceTime: 0.5
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
   m_DelayTime: 0
   m_LeftHandSnapTurnAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Left Hand Snap Turn
       m_Type: 0
@@ -2140,6 +2146,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee049a856db12e3488d7da1fed2c915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &905533426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905533416}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 905533420}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 75f1b245-c357-48c8-9acb-8967bec9dda2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6bf6c732-e011-46b1-acc5-b649a4ec5f10
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &905533427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905533416}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 905533420}
+  m_TurnSpeed: 60
+  m_LeftHandTurnAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b9ac2485-f305-451c-9106-d1d25cc235dc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_RightHandTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 93119ec4-ae3b-41c0-8fb4-7ff4c5e6f732
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1166176001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputActionReference: {fileID: -160020527567978557, guid: da2b439d1a2de5c46a4f428f8cf4fe19, type: 3}
   basket: {fileID: 8219276}
+  xrOrigin: {fileID: 905533417}
 --- !u!4 &1173508292
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class Persistence : MonoBehaviour
     [HideInInspector]
     public Dictionary<int, (Vector3 position, Quaternion rotation)> LocationInScenes = new();
     public Dictionary<Product, int> Products = new();
+    public bool hasTeleportation;
+    public bool hasSnapTurn;
 
     private void Awake()
     {

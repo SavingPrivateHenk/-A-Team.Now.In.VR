@@ -2,6 +2,7 @@ using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] 
     private UnityEvent m_onSceneLoad;
     private CameraCanvas m_fadeCanvas;
+    [SerializeField]
+    private XROrigin xrOrigin;
 
     private void Awake()
     {
@@ -19,6 +22,10 @@ public class GameManager : MonoBehaviour
         m_fadeCanvas = Instantiate(
             Resources.Load<GameObject>("Prefaps/Fade Canvas"),
             Camera.main.transform).GetComponent<CameraCanvas>();
+        xrOrigin.GetComponent<TeleportationProvider>().enabled = Persistence.Instance.hasTeleportation;
+        xrOrigin.GetComponent<ActionBasedContinuousMoveProvider>().enabled = !Persistence.Instance.hasTeleportation;
+        xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = Persistence.Instance.hasSnapTurn;
+        xrOrigin.GetComponent<ActionBasedContinuousTurnProvider>().enabled = !Persistence.Instance.hasSnapTurn;
     }
 
     public void LoadScene(string sceneName, Vector3 returnPosition, Quaternion returnRotation)
@@ -54,5 +61,7 @@ public class GameManager : MonoBehaviour
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        Persistence.Instance.hasTeleportation = xrOrigin.GetComponent<TeleportationProvider>().enabled;
+        Persistence.Instance.hasSnapTurn = xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled;
     }
 }
