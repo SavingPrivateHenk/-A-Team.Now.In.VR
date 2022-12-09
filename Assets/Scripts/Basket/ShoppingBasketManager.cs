@@ -89,7 +89,7 @@ public class ShoppingBasketManager : MonoBehaviour
         return true;
     }
 
-    private void UpdateTotalField(float change) => m_shoppingBasketTotal.text = "Totaal: " + (TotalPrice += change).ToString("C", new CultureInfo("nl-NL"));
+    private void UpdateTotalField(float change) => m_shoppingBasketTotal.text = (TotalPrice += change).ToString("C", new CultureInfo("nl-NL"));
 
     private void ToggleUI(InputAction.CallbackContext context) => m_shoppingBasket.SetActive(!m_shoppingBasket.activeSelf);
 
