@@ -69,6 +69,7 @@ public class ProductTooltip : MonoBehaviour
 
     private void OnBasketButtonClick()
     {
+        FindObjectOfType<XROrigin>().GetComponent<AudioSource>().PlayOneShot(Resources.Load<AudioClip>("Audio/mixkit-unlock-game-notification-253"));
         var productBehaviour = m_selectedGameObject.GetComponent<ProductBehaviour>();
         m_shoppingBasketManager.UpsertProduct(new Product(productBehaviour.ProductName, productBehaviour.ProductPrice, productBehaviour.PrefabName, productBehaviour.MaterialName), m_tooltipQuantity);
         m_tooltip.SetActive(false);
