@@ -227,6 +227,8 @@ UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::Play
+UnityEngine.AudioSource::PlayHelper
 UnityEngine.AudioSource::PlayOneShotHelper
 UnityEngine.AudioSource::set_loop
 UnityEngine.AudioSource::set_playOnAwake
@@ -610,7 +612,6 @@ UnityEngine.Input::GetButton
 UnityEngine.Input::GetButtonDown
 UnityEngine.Input::GetKeyDownInt
 UnityEngine.Input::GetKeyInt
-UnityEngine.Input::GetKeyUpInt
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::GetMouseButtonUp
@@ -1064,6 +1065,7 @@ UnityEngine.SceneManagement.Scene::IsValidInternal
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.Scene::GetRootCountInternal
 UnityEngine.SceneManagement.Scene::GetGUIDInternal
+UnityEngine.SceneManagement.Scene::GetNameInternal
 UnityEngine.SceneManagement.Scene::GetRootGameObjectsInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
