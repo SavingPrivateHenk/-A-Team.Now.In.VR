@@ -13,6 +13,7 @@ public class ShoppingBasketManager : MonoBehaviour
 {
     [HideInInspector]
     public Dictionary<Product, int> Products { get; private set; } = new();
+
     [HideInInspector]
     public float TotalPrice { get; set; }
 
@@ -22,10 +23,12 @@ public class ShoppingBasketManager : MonoBehaviour
     private GameObject m_shoppingBasket;
     private GameObject m_productElementContainer;
     private GameObject m_shoppingBasketBetalen;
-    
+
     private TextMeshProUGUI m_shoppingBasketTotal;
 
     private bool m_isPersonalRoomScene;
+
+    private readonly Dictionary<Product, ProductElement> Elements = new();
 
     private void Awake()
     {
@@ -55,45 +58,48 @@ public class ShoppingBasketManager : MonoBehaviour
 
     public bool RemoveProduct(Product product)
     {
-        if (!Products.ContainsKey(product)) return false;
-
-        if (TryFindElement(product.Name, out var element) &&
-            Products.TryGetValue(product, out var quantity) &&
-            Products.Remove(product))
+        if (Elements.TryGetValue(product, out var element) &&
+            Products.TryGetValue(product, out var quantity))
         {
             Destroy(element.gameObject);
-            UpdateTotalField(quantity * product.Price * -1);
-            return true;
+            UpdateTotal(quantity * product.Price * -1);
+            return Elements.Remove(product) && Products.Remove(product);
         }
         return false;
     }
 
     private bool InsertProduct(Product product, int quantity)
     {
-        var instance = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Product Element"), m_productElementContainer.transform);
-        if (!instance.TryGetComponent<ProductElement>(out var element)) return false;
+        var element = ProductElement.Create(ref product, this, m_productElementContainer.transform);
+        element.UpdateQuantity(quantity);
         Products.Add(product, quantity);
-        element.UpdateProperties(product.Name, product.Price, quantity);
-        UpdateTotalField(product.Price * quantity);
+        Elements.Add(product, element);
+        UpdateTotal(product.Price * quantity);
         return true;
     }
 
     private bool UpdateProduct(Product product, int change)
     {
-        if (!TryFindElement(product.Name, out var element)) return false;
-        var totalQuantity = Products[product] + change;
-        if (totalQuantity <= 0) return RemoveProduct(product);
-        Products[product] = totalQuantity;
-        element.UpdateProperties(product.Name, product.Price, totalQuantity);
-        UpdateTotalField(product.Price * change);
-        return true;
+        if (Elements.TryGetValue(product, out var element) &&
+            Products.TryGetValue(product, out var quantity))
+        {
+            var updatedQuantity = quantity + change;
+            if (updatedQuantity < 1) return RemoveProduct(product);
+            Products[product] = updatedQuantity;
+            element.UpdateQuantity(quantity);
+            UpdateTotal(product.Price * change);
+            return true;
+        }
+        return false;
     }
 
-    private void UpdateTotalField(float change) => m_shoppingBasketTotal.text = (TotalPrice += change).ToString("C", new CultureInfo("nl-NL"));
+    private void UpdateTotal(float change)
+    {
+        TotalPrice += change;
+        m_shoppingBasketTotal.text = TotalPrice.ToString("C", new CultureInfo("nl-NL"));
+    }
 
     private void ToggleUI(InputAction.CallbackContext context) => m_shoppingBasket.SetActive(!m_shoppingBasket.activeSelf);
-
-    private bool TryFindElement(string name, out ProductElement element) => m_productElementContainer.TryFindComponentInChildren(true, element => element.Name.Equals(name), out element);
 
     private void OnDestroy()
     {

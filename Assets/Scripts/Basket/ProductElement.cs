@@ -1,6 +1,7 @@
 using System.Globalization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProductElement : MonoBehaviour
 {
@@ -10,29 +11,38 @@ public class ProductElement : MonoBehaviour
     private TextMeshProUGUI m_totalField;
     [SerializeField]
     private TextMeshProUGUI m_quantityField;
+    [SerializeField]
+    private Button m_removeButton;
 
     [HideInInspector]
-    public string Name { get; private set; }
+    public Product Product { get; private set; }
     [HideInInspector]
-    public float Price { get; private set; }
-    [HideInInspector]
-    public int Quantity { get; private set; }
-    [HideInInspector]
-    public float Total { get; private set; }
+    public ShoppingBasketManager Manager { get; private set; }
 
-    public void UpdateProperties(string name, float price, int quantity)
+    private void Awake()
     {
-        Name = name;
-        Price = price;
-        Quantity = quantity;
-        Total = price * quantity;
-        UpdateFields();
+        m_removeButton.onClick.AddListener(() => Manager.RemoveProduct(Product));
     }
 
-    private void UpdateFields()
+    public static ProductElement Create(ref Product product, ShoppingBasketManager manager, Transform parent)
     {
-        m_nameField.text = Name;
-        m_totalField.text = Total.ToString("C", new CultureInfo("nl-NL"));
-        m_quantityField.text = Quantity.ToString();
+        var prefab = Resources.Load<GameObject>("Prefaps/Basket/Product Element");
+        var instance = Instantiate(prefab, parent).GetComponent<ProductElement>();
+        instance.Product = product;
+        instance.Manager = manager;
+        instance.Initialize();
+        return instance;
+    }
+
+    private void Initialize()
+    {
+        m_nameField.text = Product.Name;
+    }
+
+    public void UpdateQuantity(int quantity)
+    {
+        var total = Product.Price * quantity;
+        m_totalField.text = total.ToString("C", new CultureInfo("nl-NL"));
+        m_quantityField.text = quantity.ToString();
     }
 }
