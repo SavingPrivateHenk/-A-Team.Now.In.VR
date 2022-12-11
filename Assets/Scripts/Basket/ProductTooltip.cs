@@ -1,79 +1,75 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
 using TMPro;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ProductTooltip : MonoBehaviour
 {
-    private GameObject m_tooltip;
+    [SerializeField] private GameManager GameManager;
 
+    private Camera m_camera;
+    private BasketManager m_basketManager;
+    private SoundManager m_soundManager;
+    private GameObject m_tooltip;
+    private GameObject m_selected;
+    private AudioClip m_audioClip;
     private TextMeshProUGUI m_productName;
     private TextMeshProUGUI m_productPrice;
     private TextMeshProUGUI m_productQuantity;
-
-    private Button m_basketButton;
-    private Button m_incrementButton;
-    private Button m_decrementButton;
-
-    private ShoppingBasketManager m_shoppingBasketManager;
-    private GameObject m_selectedGameObject;
-    private Collider m_selectedObjectcollider;
 
     private int m_tooltipQuantity;
 
     private void Awake()
     {
+        m_audioClip = Resources.Load<AudioClip>("Audio/mixkit-unlock-game-notification-253");
         m_tooltip = Instantiate(Resources.Load<GameObject>("Prefaps/Basket/Product Tooltip"));
+        m_tooltip.GetComponentOfNamedChild<Button>("Basket Button").onClick.AddListener(OnBasketButtonClick);
+        m_tooltip.GetComponentOfNamedChild<Button>("Increment Button").onClick.AddListener(() => UpdateQuantity(1));
+        m_tooltip.GetComponentOfNamedChild<Button>("Decrement Button").onClick.AddListener(() => UpdateQuantity(-1));
+        m_productName = m_tooltip.GetComponentOfNamedChild<TextMeshProUGUI>("Productname");
+        m_productPrice = m_tooltip.GetComponentOfNamedChild<TextMeshProUGUI>("Product Price");
+        m_productQuantity = m_tooltip.GetComponentOfNamedChild<TextMeshProUGUI>("Product Quantity");
+    }
 
-        m_productName = m_tooltip.GetNamedChild("Productname").GetComponent<TextMeshProUGUI>();
-        m_productPrice = m_tooltip.GetNamedChild("Product Price").GetComponent<TextMeshProUGUI>();
-        m_productQuantity = m_tooltip.GetNamedChild("Product Quantity").GetComponent<TextMeshProUGUI>();
-
-        m_basketButton = m_tooltip.GetNamedChild("Basket Button").GetComponent<Button>();
-        m_incrementButton = m_tooltip.GetNamedChild("Increment Button").GetComponent<Button>();
-        m_decrementButton = m_tooltip.GetNamedChild("Decrement Button").GetComponent<Button>();
-
-        m_basketButton.onClick.AddListener(OnBasketButtonClick);
-        m_incrementButton.onClick.AddListener(() => UpdateQuantity(1));
-        m_decrementButton.onClick.AddListener(() => UpdateQuantity(-1));
-
-        m_shoppingBasketManager = GetComponent<ShoppingBasketManager>();
+    private void Start()
+    {
+        m_camera = GameManager.Camera;
+        m_basketManager = GameManager.BasketManager;
+        m_soundManager = GameManager.SoundManager;
     }
 
     private void LateUpdate()
     {
-        m_tooltip.transform.LookAt(2 * m_tooltip.transform.position - Camera.main.transform.position + Camera.main.transform.rotation * Vector3.forward);
+        m_tooltip.transform.LookAt(2 * m_tooltip.transform.position - m_camera.transform.position + m_camera.transform.rotation * Vector3.forward);
     }
 
     public void OnProductSelected(SelectEnterEventArgs args)
     {
-        var interactableGameObject = InteractableMonoBehaviour(args.interactableObject).gameObject;
-        if (interactableGameObject.Equals(m_selectedGameObject)) return;
+        var interactableGameObject = args.interactableObject.transform.gameObject;
+        if (interactableGameObject.Equals(m_selected)) return;
         if (interactableGameObject.TryGetComponent<ProductBehaviour>(out var product))
         {
-            m_selectedGameObject = interactableGameObject;
-            m_selectedObjectcollider = m_selectedGameObject.GetComponent<Collider>();
+            m_selected = interactableGameObject;
             m_productName.text = product.ProductName;
             m_productPrice.text = product.ProductPrice.ToString("C", new CultureInfo("nl-NL"));
             m_tooltipQuantity = 1;
             m_productQuantity.text = m_tooltipQuantity.ToString();
-            m_tooltip.transform.position = m_selectedObjectcollider.bounds.center + new Vector3(0f, m_selectedObjectcollider.bounds.extents.y + 0.3f, 0f) - Camera.main.transform.forward;
+
+            var bounds = m_selected.GetComponent<Collider>().bounds;
+            m_tooltip.transform.position = bounds.center + new Vector3(0f, bounds.extents.y + 0.3f, 0f) - m_camera.transform.forward;
             m_tooltip.SetActive(true);
         }
     }
 
     private void OnBasketButtonClick()
     {
-        FindObjectOfType<XROrigin>().GetComponent<AudioSource>().PlayOneShot(Resources.Load<AudioClip>("Audio/mixkit-unlock-game-notification-253"));
-        var productBehaviour = m_selectedGameObject.GetComponent<ProductBehaviour>();
-        m_shoppingBasketManager.UpsertProduct(new Product(productBehaviour.ProductName, productBehaviour.ProductPrice, productBehaviour.PrefabName, productBehaviour.MaterialName), m_tooltipQuantity);
+        var behaviour = m_selected.GetComponent<ProductBehaviour>();
+        m_basketManager.UpsertProduct(behaviour.ToValueType(), m_tooltipQuantity);
+        m_soundManager.PlayClip(m_audioClip);
         m_tooltip.SetActive(false);
-        m_selectedGameObject = null;
+        m_selected = null;
     }
 
     private void UpdateQuantity(int change)
@@ -81,6 +77,4 @@ public class ProductTooltip : MonoBehaviour
         m_tooltipQuantity = Math.Max(m_tooltipQuantity + change, 1);
         m_productQuantity.text = m_tooltipQuantity.ToString();
     }
-
-    private MonoBehaviour InteractableMonoBehaviour(IXRInteractable xrInteractable) => xrInteractable as MonoBehaviour;
 }

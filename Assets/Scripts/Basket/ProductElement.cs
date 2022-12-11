@@ -5,26 +5,20 @@ using UnityEngine.UI;
 
 public class ProductElement : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI m_nameField;
-    [SerializeField]
-    private TextMeshProUGUI m_totalField;
-    [SerializeField]
-    private TextMeshProUGUI m_quantityField;
-    [SerializeField]
-    private Button m_removeButton;
-
-    [HideInInspector]
+    public BasketManager Manager { get; private set; }
     public Product Product { get; private set; }
-    [HideInInspector]
-    public ShoppingBasketManager Manager { get; private set; }
+
+    [SerializeField] private TextMeshProUGUI m_nameField;
+    [SerializeField] private TextMeshProUGUI m_totalField;
+    [SerializeField] private TextMeshProUGUI m_quantityField;
+    [SerializeField] private Button m_removeButton;
 
     private void Awake()
     {
         m_removeButton.onClick.AddListener(() => Manager.RemoveProduct(Product));
     }
 
-    public static ProductElement Create(ref Product product, ShoppingBasketManager manager, Transform parent)
+    public static ProductElement Create(ref Product product, BasketManager manager, Transform parent)
     {
         var prefab = Resources.Load<GameObject>("Prefaps/Basket/Product Element");
         var instance = Instantiate(prefab, parent).GetComponent<ProductElement>();
@@ -45,4 +39,6 @@ public class ProductElement : MonoBehaviour
         m_totalField.text = total.ToString("C", new CultureInfo("nl-NL"));
         m_quantityField.text = quantity.ToString();
     }
+
+    private void OnDestroy() => m_removeButton.onClick.RemoveAllListeners();
 }

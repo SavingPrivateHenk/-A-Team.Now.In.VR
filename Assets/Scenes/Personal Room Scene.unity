@@ -269,18 +269,18 @@ PrefabInstance:
     - target: {fileID: 9197627519237075241, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
       propertyPath: m_shoppingBasketManager
       value: 
-      objectReference: {fileID: 8219276}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
 --- !u!114 &8219276 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6532732427800506152, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7924058928769176419, guid: 1c12a6050a17b7e4e8d2f4f3dce6401b, type: 3}
   m_PrefabInstance: {fileID: 8219275}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7e4aa9ee304cf42b25259927af57f0, type: 3}
+  m_Script: {fileID: 11500000, guid: bfda4e942e32b6e47a1abf1cc3479a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &40941830 stripped
@@ -2292,8 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputActionReference: {fileID: 7165847494955897718, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  basket: {fileID: 8219276}
-  xrOrigin: {fileID: 905533417}
+  gameManager: {fileID: 8219276}
 --- !u!4 &1173508292
 Transform:
   m_ObjectHideFlags: 0

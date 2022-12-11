@@ -9,4 +9,6 @@ public class ProductBehaviour : MonoBehaviour
     public float ProductPrice;
     public string PrefabName;
     public string MaterialName;
+
+    public Product ToValueType() => new(ProductName, ProductPrice, PrefabName, MaterialName);
 }
