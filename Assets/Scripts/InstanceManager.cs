@@ -16,7 +16,7 @@ public class InstanceManager : MonoBehaviour
     private XROrigin xrOrigin;
 
     [HideInInspector]
-    public Dictionary<Product, int> Products { get; private set; } = new();
+    public Dictionary<Product, int> Products { get; } = new();
 
 
     private void Awake()
@@ -57,7 +57,7 @@ public class InstanceManager : MonoBehaviour
     {
         foreach (var product in Products)
         {
-            Persistence.Instance.Products.Add(product.Key, product.Value);
+            basket.UpsertProduct(product.Key, product.Value);
         }
         inputActionReference.action.performed -= AddObject;
     }
