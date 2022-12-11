@@ -1,15 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TransitionCurve
+public class Transition
 {
-    private Func<float, float> m_interpolationFunction;
+    private readonly Func<float, float> m_function;
 
-    public TransitionCurve(TransitionType transitionType)
+    public Transition(TransitionType transitionType)
     {
-        m_interpolationFunction = transitionType switch
+        m_function = transitionType switch
         {
             TransitionType.Linear => Linear,
             TransitionType.EaseIn => EaseIn,
@@ -22,7 +20,7 @@ public class TransitionCurve
 
     public float Interpolate(float value)
     {
-        return m_interpolationFunction(value);
+        return m_function(value);
     }
 
     // Interpolation functions: linear, sin, cos, https://en.wikipedia.org/wiki/Smoothstep

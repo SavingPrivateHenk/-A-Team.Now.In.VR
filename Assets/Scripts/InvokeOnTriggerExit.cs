@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,7 +19,7 @@ public class InvokeOnTriggerExit : MonoBehaviour
             if (m_delay > 0)
             {
                 StopAllCoroutines();
-                StartCoroutine(m_event.Invoke(m_delay));
+                StartCoroutine(m_event.Invoke(TimeSpan.FromMilliseconds(m_delay)));
             }
             else
             {

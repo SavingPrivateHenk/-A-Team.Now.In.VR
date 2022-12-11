@@ -9,23 +9,29 @@ public class InstanceManager : MonoBehaviour
 { 
     [SerializeField]
     private InputActionReference inputActionReference; 
-    [SerializeField]
-    private ShoppingBasketManager basket;
-
-    [SerializeField]
+    
+    [SerializeField] 
+    private GameManager gameManager;
+    private BasketManager basket;
     private XROrigin xrOrigin;
 
+<<<<<<< HEAD
     [HideInInspector]
     public Dictionary<Product, int> Products { get; } = new();
+=======
+    public Dictionary<Product, int> Products { get; private set; } = new();
+>>>>>>> 3a06f93dcfcf8f9e5e95cb89f8b5d92c65ee9fb2
 
-
-    private void Awake()
+    private void Start()
     {
-        inputActionReference.action.performed += AddObject;
+        basket = gameManager.BasketManager;
+        xrOrigin = gameManager.XROrigin;
         xrOrigin.GetComponent<TeleportationProvider>().enabled = Persistence.Instance.hasTeleportation;
         xrOrigin.GetComponent<ActionBasedContinuousMoveProvider>().enabled = !Persistence.Instance.hasTeleportation;
         xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = Persistence.Instance.hasSnapTurn;
         xrOrigin.GetComponent<ActionBasedContinuousTurnProvider>().enabled = !Persistence.Instance.hasSnapTurn;
+
+        inputActionReference.action.performed += AddObject;
     }
 
     void AddObject(InputAction.CallbackContext callbackContext)
@@ -55,10 +61,7 @@ public class InstanceManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        foreach (var product in Products)
-        {
-            basket.UpsertProduct(product.Key, product.Value);
-        }
+        Persistence.Instance.MergeProducts(Products);
         inputActionReference.action.performed -= AddObject;
     }
 }

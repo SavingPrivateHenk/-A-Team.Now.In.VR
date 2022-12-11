@@ -1,67 +1,74 @@
+using System;
 using Unity.XR.CoreUtils;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] 
-    private int m_targetFrameRate = 60;
-    [Space]
-    [SerializeField] 
-    private UnityEvent m_onSceneLoad;
-    private CameraCanvas m_fadeCanvas;
-    [SerializeField]
-    private XROrigin xrOrigin;
+    public XROrigin XROrigin { get; private set; }
+    public Camera Camera { get; private set; }
+    public CameraCanvas CameraCanvas { get; private set; }
+    public ActionBasedController LeftController { get; private set; }
+    public ActionBasedController RightController { get; private set; }
+    public SoundManager SoundManager { get; private set; }
+    public BasketManager BasketManager { get; private set; }
+    public Scene Scene { get; set; }
+
+    [SerializeField] private int m_targetFrameRate = 60;
+    [SerializeField] private UnityEvent m_onSceneLoad;
 
     private void Awake()
     {
         Application.targetFrameRate = m_targetFrameRate;
         SceneManager.sceneLoaded += OnSceneLoaded;
-        m_fadeCanvas = Instantiate(
-            Resources.Load<GameObject>("Prefaps/Fade Canvas"),
-            Camera.main.transform).GetComponent<CameraCanvas>();
-        xrOrigin.GetComponent<TeleportationProvider>().enabled = Persistence.Instance.hasTeleportation;
-        xrOrigin.GetComponent<ActionBasedContinuousMoveProvider>().enabled = !Persistence.Instance.hasTeleportation;
-        xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = Persistence.Instance.hasSnapTurn;
-        xrOrigin.GetComponent<ActionBasedContinuousTurnProvider>().enabled = !Persistence.Instance.hasSnapTurn;
+
+        Scene = SceneManager.GetActiveScene();
+        XROrigin = FindObjectOfType<XROrigin>();
+        Camera = XROrigin.Camera;
+        CameraCanvas = Camera.AddComponentAsChild<CameraCanvas>("Camera Canvas");
+        LeftController = XROrigin.GetComponentOfNamedChild<ActionBasedController>("LeftHand Controller");
+        RightController = XROrigin.GetComponentOfNamedChild<ActionBasedController>("RightHand Controller");
+        SoundManager = gameObject.AddComponent<SoundManager>();
+        SoundManager.XROrigin = XROrigin;
+        BasketManager = gameObject.AddComponent<BasketManager>();
+        BasketManager.BasketAnchor = LeftController;
+        BasketManager.ToggleBasket = LeftController.uiPressAction.reference;
+        BasketManager.Scene = Scene;       
+    }
+
+    private void Start()
+    {
+        XROrigin.GetComponent<TeleportationProvider>().enabled = Persistence.Instance.hasTeleportation;
+        XROrigin.GetComponent<ActionBasedContinuousMoveProvider>().enabled = !Persistence.Instance.hasTeleportation;
+        XROrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = Persistence.Instance.hasSnapTurn;
+        XROrigin.GetComponent<ActionBasedContinuousTurnProvider>().enabled = !Persistence.Instance.hasSnapTurn;
     }
 
     public void LoadScene(string sceneName, Vector3 returnPosition, Quaternion returnRotation)
     {
         Persistence.Instance.LocationInScenes[SceneManager.GetActiveScene().buildIndex] = (returnPosition, returnRotation);
-        m_fadeCanvas.FadeOut(LoadSceneEvent(sceneName));
-    }
-
-    private UnityEvent LoadSceneEvent(string scene)
-    {
-        var loadEvent = new UnityEvent();
-
-        loadEvent.AddListener(
-            () => SceneManager.LoadScene(scene, LoadSceneMode.Single));
-
-        return loadEvent;
+        Persistence.Instance.hasTeleportation = XROrigin.GetComponent<TeleportationProvider>().enabled;
+        Persistence.Instance.hasSnapTurn = XROrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled;
+        CameraCanvas.FadeOut(LoadSceneEvent(sceneName), TimeSpan.FromSeconds(1));
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        SetPlayerLocation(scene);
-        m_fadeCanvas.FadeIn(m_onSceneLoad);
-    }
-
-    private void SetPlayerLocation(Scene scene)
-    {
         if (Persistence.Instance.LocationInScenes.TryGetValue(scene.buildIndex, out var location))
         {
-            FindObjectOfType<XROrigin>().transform.SetPositionAndRotation(location.position, location.rotation);
+            XROrigin.transform.SetPositionAndRotation(location.position, location.rotation);
         }
+        CameraCanvas.FadeIn(m_onSceneLoad, TimeSpan.FromSeconds(1));
     }
+
+    private UnityEvent LoadSceneEvent(string scene) => new UnityEvent().AddAction(() => SceneManager.LoadScene(scene, LoadSceneMode.Single));
 
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        Persistence.Instance.hasTeleportation = xrOrigin.GetComponent<TeleportationProvider>().enabled;
-        Persistence.Instance.hasSnapTurn = xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled;
     }
 }

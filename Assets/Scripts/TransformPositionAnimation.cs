@@ -14,12 +14,12 @@ public class TransformPositionAnimation : MonoBehaviour
 
     [SerializeField]
     private TransitionType m_transitionType;
-    private TransitionCurve m_transitionCurve;
+    private Transition m_transitionCurve;
 
     private void Awake()
     {
         m_origin = transform.localPosition;
-        m_transitionCurve = new TransitionCurve(m_transitionType);
+        m_transitionCurve = new Transition(m_transitionType);
     }
 
     [ContextMenu(nameof(MoveToTarget))]

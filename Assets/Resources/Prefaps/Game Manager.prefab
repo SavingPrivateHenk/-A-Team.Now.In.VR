@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8755684653694602449}
   - component: {fileID: 7924058928769176419}
-  - component: {fileID: 6532732427800506152}
   - component: {fileID: 9197627519237075241}
   m_Layer: 0
   m_Name: Game Manager
@@ -50,23 +49,6 @@ MonoBehaviour:
   m_onSceneLoad:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6532732427800506152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7924058928769176422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7e4aa9ee304cf42b25259927af57f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TotalPrice: 0
-  ToggleUIAction: {fileID: -6395602842196007441, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  ShoppingBasketAnchor: {fileID: 0}
-  m_shoppingBasketPrefab: {fileID: 0}
-  m_productElementPrefab: {fileID: 0}
 --- !u!114 &9197627519237075241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +61,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca16d037324ff44ab6ae8282b160d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tooltipPrefab: {fileID: 0}
-  m_mainCamera: {fileID: 0}
-  m_shoppingBasketManager: {fileID: 0}
+  GameManager: {fileID: 7924058928769176419}
