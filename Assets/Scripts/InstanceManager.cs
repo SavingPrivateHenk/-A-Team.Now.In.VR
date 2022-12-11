@@ -14,13 +14,8 @@ public class InstanceManager : MonoBehaviour
     private GameManager gameManager;
     private BasketManager basket;
     private XROrigin xrOrigin;
-
-<<<<<<< HEAD
-    [HideInInspector]
-    public Dictionary<Product, int> Products { get; } = new();
-=======
+    
     public Dictionary<Product, int> Products { get; private set; } = new();
->>>>>>> 3a06f93dcfcf8f9e5e95cb89f8b5d92c65ee9fb2
 
     private void Start()
     {
