@@ -2818,6 +2818,11 @@ struct CollectionVirtualizationController_t55D4B8A3B70A7C50AC8BEF90F18EF888017E7
 	ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* ___m_ScrollView_0;
 };
 
+// ComponentExtensions
+struct ComponentExtensions_t0A49FD18C94F689DE6C62D28F0B066A6822B93B4  : public RuntimeObject
+{
+};
+
 // Unity.XR.CoreUtils.ComponentUtils
 struct ComponentUtils_t174F7E46994A776828687AB887332A5DA1BACB55  : public RuntimeObject
 {
@@ -15170,6 +15175,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Component_t39FBE53E5EFCF4409111FB22C15FF73717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeArray* GameObject_GetComponentsInternal_m5D5FD903F9CB151AC9782E5840D397F422A82F95 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, Type_t* ___type0, bool ___useSearchTypeAsArrayReturnType1, bool ___recursive2, bool ___includeInactive3, bool ___reverse4, RuntimeObject* ___resultList5, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::TryGetComponentFastPath(System.Type,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_TryGetComponentFastPath_m1F071538D2B2D1C943BE663CE8AEED6C1DEEEE27 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, Type_t* ___type0, intptr_t ___oneFurtherThanResultValue1, const RuntimeMethod* method) ;
+// UnityEngine.GameObject GameObjectExtensions::AddEmptyGameObject(UnityEngine.GameObject,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObjectExtensions_AddEmptyGameObject_mF93A3DC614EB49044BB8224D80CF3F484775C740 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___this0, String_t* ___name1, const RuntimeMethod* method) ;
+// UnityEngine.GameObject Unity.XR.CoreUtils.GameObjectUtils::GetNamedChild(UnityEngine.GameObject,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObjectUtils_GetNamedChild_m6723E8209E188EDAB22C8B8840F6CAA357EC9FFF (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___go0, String_t* ___name1, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::CompareTag(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___tag0, const RuntimeMethod* method) ;
 // UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
@@ -23276,6 +23285,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_TryGetComponent_TisRuntimeObje
 IL_0010:
 	{
 		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// T ComponentExtensions::AddComponentAsChild<System.Object>(UnityEngine.Component,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComponentExtensions_AddComponentAsChild_TisRuntimeObject_m2C8FE68026FE2EE63A12705A580256B234D7C5EC_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* ___this0, String_t* ___name1, const RuntimeMethod* method) 
+{
+	{
+		// return @this.gameObject.AddComponentAsChild<T>(name);
+		Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* L_0 = ___this0;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
+		String_t* L_2 = ___name1;
+		RuntimeObject* L_3;
+		L_3 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, String_t*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(L_1, L_2, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_3;
+	}
+}
+// T ComponentExtensions::GetComponentOfNamedChild<System.Object>(UnityEngine.Component,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComponentExtensions_GetComponentOfNamedChild_TisRuntimeObject_m76F3C3EB39B13A8C379E987E4D7195F729182E51_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* ___this0, String_t* ___name1, const RuntimeMethod* method) 
+{
+	{
+		// return @this.gameObject.GetComponentOfNamedChild<T>(name);
+		Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* L_0 = ___this0;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
+		String_t* L_2 = ___name1;
+		RuntimeObject* L_3;
+		L_3 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, String_t*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(L_1, L_2, il2cpp_rgctx_method(method->rgctx_data, 0));
 		return L_3;
 	}
 }
@@ -38395,26 +38434,41 @@ IL_0044:
 		return L_9;
 	}
 }
-// System.Boolean GameObjectExtensions::TryFindComponentInChildren<System.Object>(UnityEngine.GameObject,System.Boolean,System.Func`2<T,System.Boolean>,T&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObjectExtensions_TryFindComponentInChildren_TisRuntimeObject_mE3D7146B235B196BB930A98EE9D0C422DAB7FB91_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___this0, bool ___includeInactive1, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___predicate2, RuntimeObject** ___result3, const RuntimeMethod* method) 
+// T GameObjectExtensions::AddComponentAsChild<System.Object>(UnityEngine.GameObject,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObjectExtensions_AddComponentAsChild_TisRuntimeObject_m5F7274B825F41DB41FCC2B767B13B64F73DFA5F4_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___this0, String_t* ___name1, const RuntimeMethod* method) 
 {
 	{
-		// result = @this.GetComponentsInChildren<T>(includeInactive).FirstOrDefault(predicate);
-		RuntimeObject** L_0 = ___result3;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = ___this0;
-		bool L_2 = ___includeInactive1;
-		NullCheck(L_1);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3;
-		L_3 = ((  ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(L_1, L_2, il2cpp_rgctx_method(method->rgctx_data, 0));
-		Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* L_4 = ___predicate2;
-		RuntimeObject* L_5;
-		L_5 = ((  RuntimeObject* (*) (RuntimeObject*, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))((RuntimeObject*)L_3, L_4, il2cpp_rgctx_method(method->rgctx_data, 1));
-		*(RuntimeObject**)L_0 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_0, (void*)L_5);
-		// return result is not null;
-		RuntimeObject** L_6 = ___result3;
-		RuntimeObject* L_7 = (*(RuntimeObject**)L_6);
-		return (bool)((((int32_t)((((RuntimeObject*)(RuntimeObject*)L_7) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		// return @this.AddEmptyGameObject(name).AddComponent<T>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___this0;
+		String_t* L_1 = ___name1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = GameObjectExtensions_AddEmptyGameObject_mF93A3DC614EB49044BB8224D80CF3F484775C740(L_0, L_1, NULL);
+		NullCheck(L_2);
+		RuntimeObject* L_3;
+		L_3 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(L_2, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_3;
+	}
+}
+// T GameObjectExtensions::GetComponentOfNamedChild<System.Object>(UnityEngine.GameObject,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObjectExtensions_GetComponentOfNamedChild_TisRuntimeObject_mA8D679BD6806A34F7D319DD2D312FBCCA43916D4_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___this0, String_t* ___name1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectUtils_t11DAAEB6B091F1DEC4EC9B0D7B4A9B3F7CFAE72F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return @this.GetNamedChild(name).GetComponent<T>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___this0;
+		String_t* L_1 = ___name1;
+		il2cpp_codegen_runtime_class_init_inline(GameObjectUtils_t11DAAEB6B091F1DEC4EC9B0D7B4A9B3F7CFAE72F_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = GameObjectUtils_GetNamedChild_m6723E8209E188EDAB22C8B8840F6CAA357EC9FFF(L_0, L_1, NULL);
+		NullCheck(L_2);
+		RuntimeObject* L_3;
+		L_3 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 0)))(L_2, il2cpp_rgctx_method(method->rgctx_data, 0));
+		return L_3;
 	}
 }
 // T Unity.XR.CoreUtils.GameObjectUtils::ExhaustiveComponentSearch<System.Object>(UnityEngine.GameObject)

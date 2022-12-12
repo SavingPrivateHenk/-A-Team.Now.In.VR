@@ -540,14 +540,14 @@ struct U3CGetEnumeratorU3Ed__1_t35287071076620851350DEE5A7358F21C466DA90;
 struct U3CGetEnumeratorU3Ed__1_t6D4BC5B68087352E56482B91E7BADA70BEB38CD2;
 // System.Collections.Concurrent.ConcurrentDictionary`2/<GetEnumerator>d__35<System.Object,System.Object>
 struct U3CGetEnumeratorU3Ed__35_tFBB72033DD97EBEE1D1AB495DD3A0C1827242215;
-// UnityEventExtensions/<Invoke>d__1`1<System.Object>
-struct U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B;
-// UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>
-struct U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E;
-// UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>
-struct U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528;
-// UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>
-struct U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF;
+// UnityEventExtensions/<Invoke>d__2`1<System.Object>
+struct U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1;
+// UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>
+struct U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863;
+// UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>
+struct U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911;
+// UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>
+struct U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2;
 // System.Linq.Enumerable/<OfTypeIterator>d__97`1<System.Object>
 struct U3COfTypeIteratorU3Ed__97_1_tF761C30C6E4843D1A86B1CF9B2400664456D923B;
 // System.Linq.Enumerable/<SelectManyIterator>d__17`2<System.Object,System.Object>
@@ -1337,10 +1337,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CEveryNthU3Ed__1_1_System_Collections_IEn
 IL2CPP_EXTERN_C const RuntimeMethod* U3CGetEnumeratorU3Ed__1_System_Collections_IEnumerator_Reset_m4710AD2906AA9D8B1281D8A1C078204D762AC69F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CGetEnumeratorU3Ed__1_System_Collections_IEnumerator_Reset_mED39879DD4868C3CEF0CF2D2BCB7A5F4D16C87E5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CGetEnumeratorU3Ed__35_System_Collections_IEnumerator_Reset_mC076EBC85BEA8C6BBD6000C7CDB836898EA57C86_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__1_1_System_Collections_IEnumerator_Reset_m9ACBCFA8493A025BA7D9C609C93ED74C48C68A4B_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__2_2_System_Collections_IEnumerator_Reset_m09271DA36AAB13FB1B09513ED5EBA35DB9C533B5_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__3_3_System_Collections_IEnumerator_Reset_m7FE762C6CABEA18F29B8A37DA4F0034B3AC1A162_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__4_4_System_Collections_IEnumerator_Reset_mA6E09619DA9B5E0F62409EDA36D97FA58DD970F3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__2_1_System_Collections_IEnumerator_Reset_m8F2BBA3CD73CD5EB57D9B1CCBC55B3E9CC3486D7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__3_2_System_Collections_IEnumerator_Reset_m75ACA3DA7BD726681BD4794EF16B4EB0D19EB320_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__4_3_System_Collections_IEnumerator_Reset_m09EDC8D5EBC66222C6F059D98C8859130DB75376_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CInvokeU3Ed__5_4_System_Collections_IEnumerator_Reset_m84CA1B8390DA199024C23CF01045D0532689E1DF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3COfTypeIteratorU3Ed__97_1_System_Collections_IEnumerator_Reset_m95C4E460E31FC87B98FE651FE9194148BD6ACD08_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSelectManyIteratorU3Ed__17_2_System_Collections_IEnumerator_Reset_mD3EF3FCFF487E193CEF556B21EC6226E896B599F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__2_System_Collections_IEnumerator_Reset_m277B54F5F241ABED88C7A5EDFFC9DCB802BFEDA8_RuntimeMethod_var;
@@ -2090,78 +2090,6 @@ struct U3CEveryNthU3Ed__1_1_tB8567E0ADDB417D726B37358312A89654B62E59D  : public 
 	int32_t ___U3CindexU3E5__2_9;
 	// System.Collections.Generic.IEnumerator`1<TValue> UnityEngine.InputSystem.Utilities.MiscHelpers/<EveryNth>d__1`1::<>7__wrap2
 	RuntimeObject* ___U3CU3E7__wrap2_10;
-};
-
-// UnityEventExtensions/<Invoke>d__1`1<System.Object>
-struct U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B  : public RuntimeObject
-{
-	// System.Int32 UnityEventExtensions/<Invoke>d__1`1::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityEventExtensions/<Invoke>d__1`1::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single UnityEventExtensions/<Invoke>d__1`1::delay
-	float ___delay_2;
-	// UnityEngine.Events.UnityEvent`1<T0> UnityEventExtensions/<Invoke>d__1`1::unityEvent
-	UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* ___unityEvent_3;
-	// T0 UnityEventExtensions/<Invoke>d__1`1::t0
-	RuntimeObject* ___t0_4;
-};
-
-// UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>
-struct U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E  : public RuntimeObject
-{
-	// System.Int32 UnityEventExtensions/<Invoke>d__2`2::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityEventExtensions/<Invoke>d__2`2::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single UnityEventExtensions/<Invoke>d__2`2::delay
-	float ___delay_2;
-	// UnityEngine.Events.UnityEvent`2<T0,T1> UnityEventExtensions/<Invoke>d__2`2::unityEvent
-	UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* ___unityEvent_3;
-	// T0 UnityEventExtensions/<Invoke>d__2`2::t0
-	RuntimeObject* ___t0_4;
-	// T1 UnityEventExtensions/<Invoke>d__2`2::t1
-	RuntimeObject* ___t1_5;
-};
-
-// UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>
-struct U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528  : public RuntimeObject
-{
-	// System.Int32 UnityEventExtensions/<Invoke>d__3`3::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityEventExtensions/<Invoke>d__3`3::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single UnityEventExtensions/<Invoke>d__3`3::delay
-	float ___delay_2;
-	// UnityEngine.Events.UnityEvent`3<T0,T1,T2> UnityEventExtensions/<Invoke>d__3`3::unityEvent
-	UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* ___unityEvent_3;
-	// T0 UnityEventExtensions/<Invoke>d__3`3::t0
-	RuntimeObject* ___t0_4;
-	// T1 UnityEventExtensions/<Invoke>d__3`3::t1
-	RuntimeObject* ___t1_5;
-	// T2 UnityEventExtensions/<Invoke>d__3`3::t2
-	RuntimeObject* ___t2_6;
-};
-
-// UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>
-struct U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF  : public RuntimeObject
-{
-	// System.Int32 UnityEventExtensions/<Invoke>d__4`4::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object UnityEventExtensions/<Invoke>d__4`4::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single UnityEventExtensions/<Invoke>d__4`4::delay
-	float ___delay_2;
-	// UnityEngine.Events.UnityEvent`4<T0,T1,T2,T3> UnityEventExtensions/<Invoke>d__4`4::unityEvent
-	UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* ___unityEvent_3;
-	// T0 UnityEventExtensions/<Invoke>d__4`4::t0
-	RuntimeObject* ___t0_4;
-	// T1 UnityEventExtensions/<Invoke>d__4`4::t1
-	RuntimeObject* ___t1_5;
-	// T2 UnityEventExtensions/<Invoke>d__4`4::t2
-	RuntimeObject* ___t2_6;
-	// T3 UnityEventExtensions/<Invoke>d__4`4::t3
-	RuntimeObject* ___t3_7;
 };
 
 // System.Linq.Enumerable/<OfTypeIterator>d__97`1<System.Object>
@@ -5023,6 +4951,23 @@ struct TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58_StaticFields
 	TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 ___invalid_1;
 };
 
+// System.TimeSpan
+struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A 
+{
+	// System.Int64 System.TimeSpan::_ticks
+	int64_t ____ticks_22;
+};
+
+struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
+{
+	// System.TimeSpan System.TimeSpan::Zero
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
+	// System.TimeSpan System.TimeSpan::MaxValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
+	// System.TimeSpan System.TimeSpan::MinValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
+};
+
 // UnityEngine.UIElements.TimeValue
 struct TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E 
 {
@@ -6336,6 +6281,78 @@ struct U3CGetEnumeratorU3Ed__35_tFBB72033DD97EBEE1D1AB495DD3A0C1827242215  : pub
 	int32_t ___U3CiU3E5__3_4;
 	// System.Collections.Concurrent.ConcurrentDictionary`2/Node<TKey,TValue> System.Collections.Concurrent.ConcurrentDictionary`2/<GetEnumerator>d__35::<current>5__4
 	Node_t821211F0535E80E80FDC8FFB600F681E98286BF0* ___U3CcurrentU3E5__4_5;
+};
+
+// UnityEventExtensions/<Invoke>d__2`1<System.Object>
+struct U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1  : public RuntimeObject
+{
+	// System.Int32 UnityEventExtensions/<Invoke>d__2`1::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object UnityEventExtensions/<Invoke>d__2`1::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.TimeSpan UnityEventExtensions/<Invoke>d__2`1::delay
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___delay_2;
+	// UnityEngine.Events.UnityEvent`1<T0> UnityEventExtensions/<Invoke>d__2`1::this
+	UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* ___this_3;
+	// T0 UnityEventExtensions/<Invoke>d__2`1::t0
+	RuntimeObject* ___t0_4;
+};
+
+// UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>
+struct U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863  : public RuntimeObject
+{
+	// System.Int32 UnityEventExtensions/<Invoke>d__3`2::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object UnityEventExtensions/<Invoke>d__3`2::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.TimeSpan UnityEventExtensions/<Invoke>d__3`2::delay
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___delay_2;
+	// UnityEngine.Events.UnityEvent`2<T0,T1> UnityEventExtensions/<Invoke>d__3`2::this
+	UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* ___this_3;
+	// T0 UnityEventExtensions/<Invoke>d__3`2::t0
+	RuntimeObject* ___t0_4;
+	// T1 UnityEventExtensions/<Invoke>d__3`2::t1
+	RuntimeObject* ___t1_5;
+};
+
+// UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>
+struct U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911  : public RuntimeObject
+{
+	// System.Int32 UnityEventExtensions/<Invoke>d__4`3::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object UnityEventExtensions/<Invoke>d__4`3::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.TimeSpan UnityEventExtensions/<Invoke>d__4`3::delay
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___delay_2;
+	// UnityEngine.Events.UnityEvent`3<T0,T1,T2> UnityEventExtensions/<Invoke>d__4`3::this
+	UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* ___this_3;
+	// T0 UnityEventExtensions/<Invoke>d__4`3::t0
+	RuntimeObject* ___t0_4;
+	// T1 UnityEventExtensions/<Invoke>d__4`3::t1
+	RuntimeObject* ___t1_5;
+	// T2 UnityEventExtensions/<Invoke>d__4`3::t2
+	RuntimeObject* ___t2_6;
+};
+
+// UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>
+struct U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2  : public RuntimeObject
+{
+	// System.Int32 UnityEventExtensions/<Invoke>d__5`4::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object UnityEventExtensions/<Invoke>d__5`4::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.TimeSpan UnityEventExtensions/<Invoke>d__5`4::delay
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___delay_2;
+	// UnityEngine.Events.UnityEvent`4<T0,T1,T2,T3> UnityEventExtensions/<Invoke>d__5`4::this
+	UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* ___this_3;
+	// T0 UnityEventExtensions/<Invoke>d__5`4::t0
+	RuntimeObject* ___t0_4;
+	// T1 UnityEventExtensions/<Invoke>d__5`4::t1
+	RuntimeObject* ___t1_5;
+	// T2 UnityEventExtensions/<Invoke>d__5`4::t2
+	RuntimeObject* ___t2_6;
+	// T3 UnityEventExtensions/<Invoke>d__5`4::t3
+	RuntimeObject* ___t3_7;
 };
 
 // TMPro.TweenRunner`1/<Start>d__2<TMPro.FloatTween>
@@ -11530,6 +11547,8 @@ inline void KeyValuePair_2__ctor_m0D5C3E0BE2D37252D3F4E0F0EA9A13C9458D4950 (KeyV
 {
 	((  void (*) (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))KeyValuePair_2__ctor_m0D5C3E0BE2D37252D3F4E0F0EA9A13C9458D4950_gshared)(__this, ___key0, ___value1, method);
 }
+// System.Int32 System.TimeSpan::get_Seconds()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TimeSpan_get_Seconds_m8CA21613DC31BD025C5D30D41BAD0ED50827578B (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___seconds0, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.UI.CoroutineTween.ColorTween::ValidTarget()
@@ -16224,8 +16243,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CGetEnumeratorU3Ed__35_Syste
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEventExtensions/<Invoke>d__1`1<System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__1_1__ctor_m9A53D8C761301BA7AB19C9C95D866F23AB2E50F0_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__2`1<System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_1__ctor_m90BDDDD7008085542281EF4910E966B30E44962B_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
@@ -16234,15 +16253,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__1_1__ctor_m9A53D8C761301B
 		return;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__1`1<System.Object>::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__1_1_System_IDisposable_Dispose_m834296349F94D53C91E236DA150B845725945FF9_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__2`1<System.Object>::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_1_System_IDisposable_Dispose_m5348F1CFEA5F8CAA6B136CF40F122A4DF6067BB2_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityEventExtensions/<Invoke>d__1`1<System.Object>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__1_1_MoveNext_m221590F9A9C84CD0FE537DCC93B47172CCBFFBF3_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, const RuntimeMethod* method) 
+// System.Boolean UnityEventExtensions/<Invoke>d__2`1<System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__2_1_MoveNext_m3F22DDFC3EA4A0AFD8058AC09383ED5856BD1E14_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16276,13 +16295,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__1_1_MoveNext_m221590F9A9C
 IL_0010:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(delay / 1000f);
-		float L_3 = (float)__this->___delay_2;
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, ((float)(L_3/(1000.0f))), NULL);
-		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_4);
+		// yield return new WaitForSeconds(delay.Seconds);
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* L_3 = (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A*)(&__this->___delay_2);
+		int32_t L_4;
+		L_4 = TimeSpan_get_Seconds_m8CA21613DC31BD025C5D30D41BAD0ED50827578B(L_3, NULL);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, ((float)L_4), NULL);
+		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_5);
 		__this->___U3CU3E1__state_0 = 1;
 		return (bool)1;
 	}
@@ -16290,13 +16311,13 @@ IL_0010:
 IL_0037:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// unityEvent?.Invoke(t0);
-		UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* L_5 = (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205*)__this->___unityEvent_3;
-		UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* L_6 = L_5;
-		G_B5_0 = L_6;
-		if (L_6)
+		// @this?.Invoke(t0);
+		UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* L_6 = (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205*)__this->___this_3;
+		UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* L_7 = L_6;
+		G_B5_0 = L_7;
+		if (L_7)
 		{
-			G_B6_0 = L_6;
+			G_B6_0 = L_7;
 			goto IL_004a;
 		}
 	}
@@ -16306,9 +16327,9 @@ IL_0037:
 
 IL_004a:
 	{
-		RuntimeObject* L_7 = (RuntimeObject*)__this->___t0_4;
+		RuntimeObject* L_8 = (RuntimeObject*)__this->___t0_4;
 		NullCheck(G_B6_0);
-		((  void (*) (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		((  void (*) (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
 	}
 
 IL_0055:
@@ -16317,26 +16338,26 @@ IL_0055:
 		return (bool)0;
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__1`1<System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__1_1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9E1504A38FA583B2BEEC3D44CDDB5565005FEA04_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__2`1<System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__2_1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m56F0B7B343CF00A362CBA21D0865A69798F47AAD_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__1`1<System.Object>::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__1_1_System_Collections_IEnumerator_Reset_m9ACBCFA8493A025BA7D9C609C93ED74C48C68A4B_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__2`1<System.Object>::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_1_System_Collections_IEnumerator_Reset_m8F2BBA3CD73CD5EB57D9B1CCBC55B3E9CC3486D7_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__1_1_System_Collections_IEnumerator_Reset_m9ACBCFA8493A025BA7D9C609C93ED74C48C68A4B_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__2_1_System_Collections_IEnumerator_Reset_m8F2BBA3CD73CD5EB57D9B1CCBC55B3E9CC3486D7_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__1`1<System.Object>::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__1_1_System_Collections_IEnumerator_get_Current_m9710D7DB3ABF0249182C5D877B5DEC7322A04EFD_gshared (U3CInvokeU3Ed__1_1_t45ED72D39A961C7C83EA02F830E984CEE2464F1B* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__2`1<System.Object>::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__2_1_System_Collections_IEnumerator_get_Current_m8AC13902CBD5865BCFDAAC407AA12AD99ACED2E8_gshared (U3CInvokeU3Ed__2_1_tD11CE023EA10B1F11BB124386FEE7B6CDF0CA0F1* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
@@ -16351,8 +16372,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__1_1_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_2__ctor_m5C05062E480180EDFBE987D11854D3BB99B63460_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_2__ctor_m2B947B50F437775500E71296AC238277ECB04AC1_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
@@ -16361,15 +16382,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_2__ctor_m5C05062E480180
 		return;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_2_System_IDisposable_Dispose_m3A5DBCC6D4CC726495FDADBB44C78C3A57D3D4E8_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_2_System_IDisposable_Dispose_m0E6E1212675B25BE7C36DB98F7666DADDF74AAC7_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__2_2_MoveNext_m4B359747061C658CC159D926EE6452CD77C31B3F_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, const RuntimeMethod* method) 
+// System.Boolean UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__3_2_MoveNext_m5B7C9E0123E4267D3123C63A2AE85B6C0F651485_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16403,13 +16424,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__2_2_MoveNext_m4B359747061
 IL_0010:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(delay / 1000f);
-		float L_3 = (float)__this->___delay_2;
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, ((float)(L_3/(1000.0f))), NULL);
-		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_4);
+		// yield return new WaitForSeconds(delay.Seconds);
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* L_3 = (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A*)(&__this->___delay_2);
+		int32_t L_4;
+		L_4 = TimeSpan_get_Seconds_m8CA21613DC31BD025C5D30D41BAD0ED50827578B(L_3, NULL);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, ((float)L_4), NULL);
+		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_5);
 		__this->___U3CU3E1__state_0 = 1;
 		return (bool)1;
 	}
@@ -16417,13 +16440,13 @@ IL_0010:
 IL_0037:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// unityEvent?.Invoke(t0, t1);
-		UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* L_5 = (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961*)__this->___unityEvent_3;
-		UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* L_6 = L_5;
-		G_B5_0 = L_6;
-		if (L_6)
+		// @this?.Invoke(t0, t1);
+		UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* L_6 = (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961*)__this->___this_3;
+		UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* L_7 = L_6;
+		G_B5_0 = L_7;
+		if (L_7)
 		{
-			G_B6_0 = L_6;
+			G_B6_0 = L_7;
 			goto IL_004a;
 		}
 	}
@@ -16433,10 +16456,10 @@ IL_0037:
 
 IL_004a:
 	{
-		RuntimeObject* L_7 = (RuntimeObject*)__this->___t0_4;
-		RuntimeObject* L_8 = (RuntimeObject*)__this->___t1_5;
+		RuntimeObject* L_8 = (RuntimeObject*)__this->___t0_4;
+		RuntimeObject* L_9 = (RuntimeObject*)__this->___t1_5;
 		NullCheck(G_B6_0);
-		((  void (*) (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_7, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		((  void (*) (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
 	}
 
 IL_005b:
@@ -16445,26 +16468,26 @@ IL_005b:
 		return (bool)0;
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__2_2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5099D07B9EF2AA7E87183D1083E2399C5B16AA30_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__3_2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m085A41988869FFF44625C7BE797091E050A7C43C_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__2_2_System_Collections_IEnumerator_Reset_m09271DA36AAB13FB1B09513ED5EBA35DB9C533B5_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_2_System_Collections_IEnumerator_Reset_m75ACA3DA7BD726681BD4794EF16B4EB0D19EB320_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__2_2_System_Collections_IEnumerator_Reset_m09271DA36AAB13FB1B09513ED5EBA35DB9C533B5_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__3_2_System_Collections_IEnumerator_Reset_m75ACA3DA7BD726681BD4794EF16B4EB0D19EB320_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__2`2<System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__2_2_System_Collections_IEnumerator_get_Current_m802FF23E1B5AB298B1CD53E86F6EE852935B157B_gshared (U3CInvokeU3Ed__2_2_tD2FE57755C22C39ECA5F733522E0A8416E9A6F9E* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__3`2<System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__3_2_System_Collections_IEnumerator_get_Current_m7545C4A78DA413CD4E8A9EB8329EC1FA10DAAE58_gshared (U3CInvokeU3Ed__3_2_t1A96B69E62EA006DAE859DB6482F12263776F863* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
@@ -16479,8 +16502,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__2_2_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_3__ctor_m6F864F1408856297158B43DEDFC0951ABF1C0761_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_3__ctor_m05D1BE3AAE2A7D914CCE57AE0BA58E0106AC7C73_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
@@ -16489,15 +16512,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_3__ctor_m6F864F14088562
 		return;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_3_System_IDisposable_Dispose_m255A5A05BF104FAA3762F4B762486A63FA5B06A7_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_3_System_IDisposable_Dispose_mA9E5C97DE38C76EF1105779BED375B1FCB6ABACF_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__3_3_MoveNext_mB3B97C37C5FE7B828631886E1FE63034323B5A69_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, const RuntimeMethod* method) 
+// System.Boolean UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__4_3_MoveNext_m1A1DC4427101CC25E1B57C5D40F22E90E184E394_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16531,13 +16554,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__3_3_MoveNext_mB3B97C37C5F
 IL_0010:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(delay / 1000f);
-		float L_3 = (float)__this->___delay_2;
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, ((float)(L_3/(1000.0f))), NULL);
-		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_4);
+		// yield return new WaitForSeconds(delay.Seconds);
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* L_3 = (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A*)(&__this->___delay_2);
+		int32_t L_4;
+		L_4 = TimeSpan_get_Seconds_m8CA21613DC31BD025C5D30D41BAD0ED50827578B(L_3, NULL);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, ((float)L_4), NULL);
+		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_5);
 		__this->___U3CU3E1__state_0 = 1;
 		return (bool)1;
 	}
@@ -16545,13 +16570,13 @@ IL_0010:
 IL_0037:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// unityEvent?.Invoke(t0, t1, t2);
-		UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* L_5 = (UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4*)__this->___unityEvent_3;
-		UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* L_6 = L_5;
-		G_B5_0 = L_6;
-		if (L_6)
+		// @this?.Invoke(t0, t1, t2);
+		UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* L_6 = (UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4*)__this->___this_3;
+		UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4* L_7 = L_6;
+		G_B5_0 = L_7;
+		if (L_7)
 		{
-			G_B6_0 = L_6;
+			G_B6_0 = L_7;
 			goto IL_004a;
 		}
 	}
@@ -16561,11 +16586,11 @@ IL_0037:
 
 IL_004a:
 	{
-		RuntimeObject* L_7 = (RuntimeObject*)__this->___t0_4;
-		RuntimeObject* L_8 = (RuntimeObject*)__this->___t1_5;
-		RuntimeObject* L_9 = (RuntimeObject*)__this->___t2_6;
+		RuntimeObject* L_8 = (RuntimeObject*)__this->___t0_4;
+		RuntimeObject* L_9 = (RuntimeObject*)__this->___t1_5;
+		RuntimeObject* L_10 = (RuntimeObject*)__this->___t2_6;
 		NullCheck(G_B6_0);
-		((  void (*) (UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4*, RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_7, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		((  void (*) (UnityEvent_3_t55868EB0205828F99945BD02DAAB68E6953E61D4*, RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_8, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
 	}
 
 IL_0061:
@@ -16574,26 +16599,26 @@ IL_0061:
 		return (bool)0;
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__3_3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m23305A17C3523EC6A17602FCA6774EDD4C310BE0_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__4_3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCF9EF6A9E3E1DB99864C3BFF8CEDA07BCD521F73_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__3_3_System_Collections_IEnumerator_Reset_m7FE762C6CABEA18F29B8A37DA4F0034B3AC1A162_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_3_System_Collections_IEnumerator_Reset_m09EDC8D5EBC66222C6F059D98C8859130DB75376_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__3_3_System_Collections_IEnumerator_Reset_m7FE762C6CABEA18F29B8A37DA4F0034B3AC1A162_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__4_3_System_Collections_IEnumerator_Reset_m09EDC8D5EBC66222C6F059D98C8859130DB75376_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__3`3<System.Object,System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__3_3_System_Collections_IEnumerator_get_Current_m97ABF20219BEA0743A9E553BB8902D9A4551007B_gshared (U3CInvokeU3Ed__3_3_tEF5D897AB59ED4B93A8F96848BC614A0C1D47528* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__4`3<System.Object,System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__4_3_System_Collections_IEnumerator_get_Current_m8AFDF13746D9523C626A87F5CEFE8B456C4CB165_gshared (U3CInvokeU3Ed__4_3_tAD51CFA4138DC0723DC4DAAE15B2E38C88367911* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
@@ -16608,8 +16633,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__3_3_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_4__ctor_mDDC37B7CADFC1EE652DEA3615147340B402D8C5A_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__5_4__ctor_m060C6DCA2406998F386DE7CB4EA011862D3D2E03_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
@@ -16618,15 +16643,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_4__ctor_mDDC37B7CADFC1E
 		return;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_4_System_IDisposable_Dispose_mC21EE3569BE090F06CB00980181CC3427AD2FF34_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__5_4_System_IDisposable_Dispose_m71BAE7A134A295E6D89E513BF07A074238125D95_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// System.Boolean UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__4_4_MoveNext_mDB52B430F20136A8B02BF05D7F088E95BD249812_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, const RuntimeMethod* method) 
+// System.Boolean UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__5_4_MoveNext_m1ED86D323699F03F907594D3A95B8F72C21DFB7A_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16660,13 +16685,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CInvokeU3Ed__4_4_MoveNext_mDB52B430F20
 IL_0010:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(delay / 1000f);
-		float L_3 = (float)__this->___delay_2;
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, ((float)(L_3/(1000.0f))), NULL);
-		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_4);
+		// yield return new WaitForSeconds(delay.Seconds);
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* L_3 = (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A*)(&__this->___delay_2);
+		int32_t L_4;
+		L_4 = TimeSpan_get_Seconds_m8CA21613DC31BD025C5D30D41BAD0ED50827578B(L_3, NULL);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, ((float)L_4), NULL);
+		__this->___U3CU3E2__current_1 = (RuntimeObject*)L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)(RuntimeObject*)L_5);
 		__this->___U3CU3E1__state_0 = 1;
 		return (bool)1;
 	}
@@ -16674,13 +16701,13 @@ IL_0010:
 IL_0037:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// unityEvent?.Invoke(t0, t1, t2, t3);
-		UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* L_5 = (UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355*)__this->___unityEvent_3;
-		UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* L_6 = L_5;
-		G_B5_0 = L_6;
-		if (L_6)
+		// @this?.Invoke(t0, t1, t2, t3);
+		UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* L_6 = (UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355*)__this->___this_3;
+		UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355* L_7 = L_6;
+		G_B5_0 = L_7;
+		if (L_7)
 		{
-			G_B6_0 = L_6;
+			G_B6_0 = L_7;
 			goto IL_004a;
 		}
 	}
@@ -16690,12 +16717,12 @@ IL_0037:
 
 IL_004a:
 	{
-		RuntimeObject* L_7 = (RuntimeObject*)__this->___t0_4;
-		RuntimeObject* L_8 = (RuntimeObject*)__this->___t1_5;
-		RuntimeObject* L_9 = (RuntimeObject*)__this->___t2_6;
-		RuntimeObject* L_10 = (RuntimeObject*)__this->___t3_7;
+		RuntimeObject* L_8 = (RuntimeObject*)__this->___t0_4;
+		RuntimeObject* L_9 = (RuntimeObject*)__this->___t1_5;
+		RuntimeObject* L_10 = (RuntimeObject*)__this->___t2_6;
+		RuntimeObject* L_11 = (RuntimeObject*)__this->___t3_7;
 		NullCheck(G_B6_0);
-		((  void (*) (UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_7, L_8, L_9, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
+		((  void (*) (UnityEvent_4_tAB063CF33654FE5ABDABAE30C91904EE93306355*, RuntimeObject*, RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 0)))(G_B6_0, L_8, L_9, L_10, L_11, il2cpp_rgctx_method(method->klass->rgctx_data, 0));
 	}
 
 IL_0067:
@@ -16704,26 +16731,26 @@ IL_0067:
 		return (bool)0;
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__4_4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3A6F247F7EAB34703D06B4B9EDE6F21021C83850_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__5_4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEBC6BBF69B8A477ECD29388B4053B7F23F9ECC50_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;
 		return L_0;
 	}
 }
-// System.Void UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__4_4_System_Collections_IEnumerator_Reset_mA6E09619DA9B5E0F62409EDA36D97FA58DD970F3_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, const RuntimeMethod* method) 
+// System.Void UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInvokeU3Ed__5_4_System_Collections_IEnumerator_Reset_m84CA1B8390DA199024C23CF01045D0532689E1DF_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NullCheck(L_0);
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__4_4_System_Collections_IEnumerator_Reset_mA6E09619DA9B5E0F62409EDA36D97FA58DD970F3_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CInvokeU3Ed__5_4_System_Collections_IEnumerator_Reset_m84CA1B8390DA199024C23CF01045D0532689E1DF_RuntimeMethod_var)));
 	}
 }
-// System.Object UnityEventExtensions/<Invoke>d__4`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__4_4_System_Collections_IEnumerator_get_Current_mF188C19A3A05F1CB7F29726EFF8032CA1379B388_gshared (U3CInvokeU3Ed__4_4_t75207DB2EE3DE516CA44949AED4AE3FBBA1603DF* __this, const RuntimeMethod* method) 
+// System.Object UnityEventExtensions/<Invoke>d__5`4<System.Object,System.Object,System.Object,System.Object>::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CInvokeU3Ed__5_4_System_Collections_IEnumerator_get_Current_mCF6B3EE438BD63631FE8BA454B9D52276D1A8C68_gshared (U3CInvokeU3Ed__5_4_t130A1B85DF59240A2E0B30B56EB5294354A2C3D2* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CU3E2__current_1;

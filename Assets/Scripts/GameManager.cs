@@ -1,9 +1,7 @@
 using System;
 using Unity.XR.CoreUtils;
-using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 

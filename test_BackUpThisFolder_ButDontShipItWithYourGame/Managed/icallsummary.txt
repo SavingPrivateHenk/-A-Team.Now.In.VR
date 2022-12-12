@@ -227,11 +227,13 @@ UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
+UnityEngine.AudioSource::get_volume
 UnityEngine.AudioSource::Play
 UnityEngine.AudioSource::PlayHelper
 UnityEngine.AudioSource::PlayOneShotHelper
 UnityEngine.AudioSource::set_loop
 UnityEngine.AudioSource::set_playOnAwake
+UnityEngine.AudioSource::set_volume
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -304,7 +306,9 @@ UnityEngine.Canvas::get_pixelRect_Injected
 UnityEngine.Canvas::get_renderingDisplaySize_Injected
 UnityEngine.Canvas::set_additionalShaderChannels
 UnityEngine.Canvas::set_overrideSorting
+UnityEngine.Canvas::set_planeDistance
 UnityEngine.Canvas::set_referencePixelsPerUnit
+UnityEngine.Canvas::set_renderMode
 UnityEngine.Canvas::set_scaleFactor
 UnityEngine.Canvas::set_sortingLayerID
 UnityEngine.Canvas::set_sortingOrder
@@ -831,7 +835,6 @@ UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Internal_ToAxisAngleRad_Injected
 UnityEngine.Quaternion::Internal_ToEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
-UnityEngine.Quaternion::LerpUnclamped_Injected
 UnityEngine.Quaternion::Lerp_Injected
 UnityEngine.Quaternion::LookRotation_Injected
 UnityEngine.Quaternion::Slerp_Injected
